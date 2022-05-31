@@ -1,0 +1,11 @@
+framework module IrisPayUI {
+  umbrella header "IrisPayUI.h"
+
+  export *
+  module * { export * }
+}
+
+module IrisPayUI.Swift {
+    header "IrisPayUI-Swift.h"
+    requires objc
+}

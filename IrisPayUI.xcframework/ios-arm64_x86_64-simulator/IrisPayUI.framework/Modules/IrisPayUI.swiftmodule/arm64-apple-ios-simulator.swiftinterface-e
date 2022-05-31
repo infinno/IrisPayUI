@@ -1,0 +1,173 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IrisPayUI
+import Foundation
+@_exported import IrisPayUI
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+public enum IPUILanguage : Swift.String, Swift.CaseIterable {
+  case bg
+  case en
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [IrisPayUI.IPUILanguage]
+  public typealias RawValue = Swift.String
+  public static var allCases: [IrisPayUI.IPUILanguage] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct IPUIUser : Swift.Decodable {
+  public let hash: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+}
+final public class IrisPayUI {
+  public static var appearance: IrisPayUI.IPUIAppearance
+  @available(*, unavailable, renamed: "init(irisHash:environment:irisInstanceURL:appearance:language:)")
+  public init(irisHash: Swift.String, irisURL: Foundation.URL? = nil, appearance: IrisPayUI.IPUIAppearance = IPUIAppearance(), language: IrisPayUI.IPUILanguage = .bg)
+  public init(irisHash: Swift.String, environment: IrisPayUI.IPUIEnvironment, irisInstanceURL: Foundation.URL? = nil, appearance: IrisPayUI.IPUIAppearance = IPUIAppearance(), language: IrisPayUI.IPUILanguage = .bg)
+  final public func setUserHash(_ hash: Swift.String)
+  final public func startLogin(delegate: IrisPayUI.IPUIDelegate)
+  final public func addIBAN(withWebhookHash webhookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIIbanDelegate)
+  final public func openRedirectedURL(_ url: Foundation.URL)
+  final public func startPayment(withIBAN iban: Swift.String? = nil, delegate: IrisPayUI.IPUIDelegate)
+  final public func startPaymentWithoutConsent(paymentModel: IrisPayUI.IPUIPayment, country: Swift.String? = nil, hookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIDelegate)
+  final public func payByClick(paymentHash: Swift.String, delegate: IrisPayUI.IPUIDelegate)
+  final public func confirmPayment(withCode code: Swift.String, webhookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIPaymentDelegate)
+  @objc deinit
+}
+public class IPUIAppearance {
+  public enum CornerCurve {
+    case circular, continuous
+    public static func == (a: IrisPayUI.IPUIAppearance.CornerCurve, b: IrisPayUI.IPUIAppearance.CornerCurve) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum IPUIInterfaceStyle {
+    case light, dark, unspecified
+    public static func == (a: IrisPayUI.IPUIAppearance.IPUIInterfaceStyle, b: IrisPayUI.IPUIAppearance.IPUIInterfaceStyle) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var interfaceStyle: IrisPayUI.IPUIAppearance.IPUIInterfaceStyle
+  public var tintColor: UIKit.UIColor
+  public var backgroundColor: UIKit.UIColor
+  public var bodyFont: UIKit.UIFont
+  public var titleFont: UIKit.UIFont
+  public var navigationTitleFont: UIKit.UIFont
+  public var listBackgroundColor: UIKit.UIColor?
+  public var listStyle: UIKit.UITableView.Style
+  public var listSeparatorStyle: UIKit.UITableViewCell.SeparatorStyle
+  public var listItemTitleLabelFont: UIKit.UIFont?
+  public var listItemTitleTextColor: UIKit.UIColor
+  public var listItemDetailTextColor: UIKit.UIColor
+  public var fieldHeight: CoreGraphics.CGFloat
+  public var fieldCornerRadius: CoreGraphics.CGFloat
+  public var fieldCornerCurve: IrisPayUI.IPUIAppearance.CornerCurve
+  public var fieldBorderWidth: CoreGraphics.CGFloat
+  public var fieldBorderColor: UIKit.UIColor {
+    get
+    set
+  }
+  public var fieldBackgroundColor: UIKit.UIColor?
+  public var fieldDisabledBackgroundColor: UIKit.UIColor?
+  public var fieldTextIndent: CoreGraphics.CGFloat
+  public var fieldBorderStyle: UIKit.UITextField.BorderStyle
+  public var fieldFont: UIKit.UIFont?
+  public var fieldTextColor: UIKit.UIColor
+  public var fieldDisabledTextColor: UIKit.UIColor
+  public var buttonHeight: CoreGraphics.CGFloat
+  public var buttonCornerRadius: CoreGraphics.CGFloat
+  public var buttonCornerCurve: IrisPayUI.IPUIAppearance.CornerCurve
+  public var buttonFont: UIKit.UIFont?
+  public var buttonBackgroundColor: UIKit.UIColor?
+  public var buttonTextColor: UIKit.UIColor {
+    get
+    set
+  }
+  public var buttonEdgeInsets: UIKit.UIEdgeInsets
+  public var isButtonTextAllCaps: Swift.Bool
+  public init()
+  @objc deinit
+}
+public struct IPUIPayment : Swift.Codable {
+  public let description: Swift.String
+  public let currency: Swift.String
+  public let publicHash: Swift.String
+  public let toIban: Swift.String
+  public let emailNotification: Swift.Bool
+  public let sum: Foundation.Decimal
+  public let regulatoryReportType: Swift.String?
+  public let identifier: Swift.String?
+  public let identifierType: IrisPayUI.IPUIIdentifierType?
+  public let paymentCategory: Swift.String?
+  public let fromDate: Foundation.Date?
+  public let endDate: Foundation.Date?
+  public let documentNumber: Swift.String?
+  public let documentDate: Foundation.Date?
+  public let ultimateDebtor: Swift.String?
+  public init(description: Swift.String, currency: Swift.String, publicHash: Swift.String, toIban: Swift.String, emailNotification: Swift.Bool, sum: Foundation.Decimal, regulatoryReportType: Swift.String? = nil, identifier: Swift.String? = nil, identifierType: IrisPayUI.IPUIIdentifierType? = nil, paymentCategory: Swift.String? = nil, fromDate: Foundation.Date? = nil, endDate: Foundation.Date? = nil, documentNumber: Swift.String? = nil, documentDate: Foundation.Date? = nil, ultimateDebtor: Swift.String? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func target(forAction action: ObjectiveC.Selector, withSender sender: Any?) -> Any?
+}
+public enum IPUIEnvironment : Swift.String, Swift.CaseIterable {
+  case sandbox
+  case production
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [IrisPayUI.IPUIEnvironment]
+  public typealias RawValue = Swift.String
+  public static var allCases: [IrisPayUI.IPUIEnvironment] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(*, deprecated, renamed: "IPUIDelegate")
+public protocol IrisUIDelegate : UIKit.UIViewController {
+  func ready(result: Any?)
+}
+@objc public protocol IPUIDelegate {
+  @objc func ready(result: Swift.String?)
+}
+public protocol IPUIIbanDelegate : IrisPayUI.IPUIDelegate {
+  func ibanAdded(result: Swift.String?)
+}
+@objc public protocol IPUIPaymentDelegate : IrisPayUI.IPUIDelegate {
+  @available(*, deprecated, message: "Will not be called anymore.")
+  @objc optional func gotConsent(_ consent: Swift.String)
+  @objc func paymentCompleted(result: Swift.String?)
+}
+public enum IPUIIdentifierType : Swift.String, Swift.Codable {
+  case EGN
+  case EIK
+  case PNF
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension IrisPayUI.IPUILanguage : Swift.Equatable {}
+extension IrisPayUI.IPUILanguage : Swift.Hashable {}
+extension IrisPayUI.IPUILanguage : Swift.RawRepresentable {}
+extension IrisPayUI.IPUIAppearance.CornerCurve : Swift.Equatable {}
+extension IrisPayUI.IPUIAppearance.CornerCurve : Swift.Hashable {}
+extension IrisPayUI.IPUIAppearance.IPUIInterfaceStyle : Swift.Equatable {}
+extension IrisPayUI.IPUIAppearance.IPUIInterfaceStyle : Swift.Hashable {}
+extension IrisPayUI.IPUIEnvironment : Swift.Equatable {}
+extension IrisPayUI.IPUIEnvironment : Swift.Hashable {}
+extension IrisPayUI.IPUIEnvironment : Swift.RawRepresentable {}
+extension IrisPayUI.IPUIIdentifierType : Swift.Equatable {}
+extension IrisPayUI.IPUIIdentifierType : Swift.Hashable {}
+extension IrisPayUI.IPUIIdentifierType : Swift.RawRepresentable {}
