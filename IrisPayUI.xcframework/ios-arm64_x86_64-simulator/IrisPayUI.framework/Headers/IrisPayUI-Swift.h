@@ -197,6 +197,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -217,11 +219,100 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+enum IPUIInterfaceStyle : NSInteger;
+@class UIColor;
+@class UIFont;
+enum CornerCurve : NSInteger;
+
+SWIFT_CLASS_NAMED("IPUIAppearance")
+@interface IPUIAppearance : NSObject
+/// The light/dark mode setting. Set <code>.light</code> or <code>.dark</code> to force a particular mode. Default is <code>.unspecified</code>. It will follow the system setting.
+@property (nonatomic) enum IPUIInterfaceStyle interfaceStyle;
+/// The color which will be used to tint all the UI. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173141-systemblue">.systemBlue</a>.
+@property (nonatomic, strong) UIColor * _Nonnull tintColor;
+/// The color which will be used for the background of the form views.
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// The font which will generally be used for the text labels. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body">Body</a> font.
+@property (nonatomic, strong) UIFont * _Nonnull bodyFont;
+/// The font which will generally be used for the more prominent labels. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body">Body</a> font  <em>bolded</em> and of 20 pt. size.
+@property (nonatomic, strong) UIFont * _Nonnull titleFont;
+/// The font which will be used for the navigation titles. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616702-headline">Headline</a> font.
+@property (nonatomic, strong) UIFont * _Nonnull navigationTitleFont;
+/// The color which will be used for the background of the list views.
+@property (nonatomic, strong) UIColor * _Nullable listBackgroundColor;
+/// The table style which will be used for the list view. The default is <a href="https://developer.apple.com/documentation/uikit/uitableview/style/plain">.plain</a>.
+@property (nonatomic) UITableViewStyle listStyle;
+/// The separator style which will be used in the list view. The default is <a href="https://developer.apple.com/documentation/uikit/uitableviewcell/separatorstyle/singleline">.singleLine</a>.
+@property (nonatomic) UITableViewCellSeparatorStyle listSeparatorStyle;
+/// The font which will be used for the item labels in the list view. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body">Body</a> font.
+@property (nonatomic, strong) UIFont * _Nullable listItemTitleLabelFont;
+/// The color for the main text labels in the list. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173131-label">.label</a>.
+@property (nonatomic, strong) UIColor * _Nonnull listItemTitleTextColor;
+/// The color for the detail text labels in the list. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173131-label">.label</a>.
+@property (nonatomic, strong) UIColor * _Nonnull listItemDetailTextColor;
+/// The height of the input fields. Default is 44 points.
+@property (nonatomic) CGFloat fieldHeight;
+/// The corner radius of the input fields. Default is 14 points. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic) CGFloat fieldCornerRadius;
+/// The way the input fields’ corners curve. Default is <code>.circular</code>.
+/// <code>.continuous</code> works only on iOS 13+.
+@property (nonatomic) enum CornerCurve fieldCornerCurve;
+/// The border width of the input fields. Default is 0 points. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic) CGFloat fieldBorderWidth;
+/// The border color of the input fields. Default is gray. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic, strong) UIColor * _Nonnull fieldBorderColor;
+/// The background color of the input fields. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173140-systembackground">.systemBackground</a>. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic, strong) UIColor * _Nullable fieldBackgroundColor;
+/// The background color of the input fields when they are disabled. Default is <code>#F9F9F9</code>. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic, strong) UIColor * _Nullable fieldDisabledBackgroundColor;
+/// The indentation of the text (on both sides) in the input fields. Default is 0 points. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic) CGFloat fieldTextIndent;
+/// The border style of the input fields. Default is <a href="https://developer.apple.com/documentation/uikit/uitextfield/borderstyle/roundedrect">.roundedRect</a>. Set to <a href="https://developer.apple.com/documentation/uikit/uitextfield/borderstyle/none">.none</a> for full customization.
+@property (nonatomic) UITextBorderStyle fieldBorderStyle;
+/// The font which will be used in the input fields. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body">Body</a> font.
+@property (nonatomic, strong) UIFont * _Nullable fieldFont;
+/// The color for the text in the input fields. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173131-label">.label</a>.
+@property (nonatomic, strong) UIColor * _Nonnull fieldTextColor;
+/// The color for the text in the input fields when they are disabled. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173136-secondarylabel">.secondaryLabel</a>.
+@property (nonatomic, strong) UIColor * _Nonnull fieldDisabledTextColor;
+/// The height of the buttons. Default is 36 points.
+@property (nonatomic) CGFloat buttonHeight;
+/// The corner radius of the buttons. Default is half the height: 18 points.
+@property (nonatomic) CGFloat buttonCornerRadius;
+/// The way the buttons’ corners curve. Default is <code>.circular</code>.
+/// <code>.continuous</code> works only on iOS 13+.
+@property (nonatomic) enum CornerCurve buttonCornerCurve;
+/// The font which will be used in the buttons. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body">Body</a> font.
+@property (nonatomic, strong) UIFont * _Nullable buttonFont;
+/// The color which will be used for the background of the buttons. Default is <code>nil</code>.
+@property (nonatomic, strong) UIColor * _Nullable buttonBackgroundColor;
+/// The color for the text in the buttons. Default is the <code>tintColor</code>.
+@property (nonatomic, strong) UIColor * _Nonnull buttonTextColor;
+/// The inset or outset margins for the rectangle surrounding all of the button’s content.
+/// Use this property to resize and reposition the effective drawing rectangle for the button content. The content comprises the button image and button title. You can specify a different value for each of the four insets (top, left, bottom, right). A positive value shrinks, or insets, that edge—moving it closer to the center of the button. A negative value expands, or outsets, that edge. Use the <a href="https://developer.apple.com/documentation/uikit/uiedgeinsets/1625042-init">init(top:left:bottom:right:)</a> function to construct a value for this property. The default value is <a href="https://developer.apple.com/documentation/uikit/uiedgeinsets/1624518-zero">zero</a>.
+/// The button uses this property to determine <a href="https://developer.apple.com/documentation/uikit/uiview/1622600-intrinsiccontentsize">intrinsicContentSize</a> and <a href="https://developer.apple.com/documentation/uikit/uiview/1622625-sizethatfits">sizeThatFits(_:)</a>.
+@property (nonatomic) UIEdgeInsets buttonEdgeInsets;
+/// If this property is set to true, the text in the all the buttons will be uppercased. Default is <code>false</code>.
+@property (nonatomic) BOOL isButtonTextAllCaps;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, CornerCurve, open) {
+  CornerCurveCircular = 0,
+  CornerCurveContinuous = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, IPUIInterfaceStyle, open) {
+  IPUIInterfaceStyleLight = 0,
+  IPUIInterfaceStyleDark = 1,
+  IPUIInterfaceStyleUnspecified = 2,
+};
+
 @class NSString;
 
 /// Methods you use to observe the state of the processes you initiated in IrisPayUI.
 /// Your delegate must be an instance of <code>UIViewController</code>.
-SWIFT_PROTOCOL("_TtP9IrisPayUI12IPUIDelegate_")
+SWIFT_PROTOCOL_NAMED("IPUIDelegate")
 @protocol IPUIDelegate
 /// This method is called when the user has finished with their actions.
 /// You can use this method to dismiss the Iris Pay UI.
@@ -230,8 +321,128 @@ SWIFT_PROTOCOL("_TtP9IrisPayUI12IPUIDelegate_")
 - (void)readyWithResult:(NSString * _Nullable)result;
 @end
 
+typedef SWIFT_ENUM_NAMED(NSInteger, IPUIEnvironment, "IPUIEnvironment", open) {
+/// Use this to call the sandbox IrisPayUI environment. It’s preferable to use this during development.
+  IPUIEnvironmentSandbox = 0,
+/// Use this to call the production IrisPayUI environment.
+  IPUIEnvironmentProduction = 1,
+};
 
-SWIFT_PROTOCOL("_TtP9IrisPayUI19IPUIPaymentDelegate_")
+
+SWIFT_PROTOCOL_NAMED("IPUIIbanDelegate")
+@protocol IPUIIbanDelegate <IPUIDelegate>
+/// This method is called when the user has finished adding their IBANs.
+/// You can use this method to dismiss the Iris Pay UI.
+/// \param result Since the original <code>result</code> could be an arbitrary JSON element, it is passed to you as a <code>String</code>. If the user taps the close button this will be <code>nil</code>.
+///
+- (void)ibanAddedWithResult:(NSString * _Nullable)result;
+@end
+
+typedef SWIFT_ENUM_NAMED(NSInteger, IPUIIdentifierType, "IPUIIdentifierType", open) {
+  IPUIIdentifierTypeEGN = 0,
+  IPUIIdentifierTypeEIK = 1,
+  IPUIIdentifierTypePNF = 2,
+};
+
+typedef SWIFT_ENUM_NAMED(NSInteger, IPUILanguage, "IPUILanguage", open) {
+/// Bulgarian language
+  IPUILanguageBg = 0,
+/// English language
+  IPUILanguageEn = 1,
+};
+
+@class NSDate;
+
+SWIFT_CLASS_NAMED("IPUIPayment")
+@interface IPUIPayment : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull desc;
+/// The currency in which the payment is to be made
+@property (nonatomic, readonly, copy) NSString * _Nonnull currency;
+/// Merchant’s hash.
+@property (nonatomic, readonly, copy) NSString * _Nonnull publicHash;
+/// The IBAN of the receiver.
+@property (nonatomic, readonly, copy) NSString * _Nonnull toIban;
+/// If you want to be notified by email.
+@property (nonatomic, readonly) BOOL emailNotification;
+/// The amount to be sent.
+@property (nonatomic, readonly) NSDecimal sum;
+/// Accepted values for regulatoryReportType are: “1”, “2”, “3”, “4”, “5”, “6”, “9”.
+/// 1 - Declaration, 2 - Inspection Act, 3 - Penalty Decree, 4 - advance payment, 5 - batch property number, 6 - enforced collection order, 9 - others.
+/// Payment category pattern: ^[0-9]{6}?$
+/// Example: 110000.
+/// Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable regulatoryReportType;
+/// Must provide EGN, EIK or PNF. Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable identifier;
+/// An enum specifying the type of the identifier. Available values: EGN, EIK or PNF. Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable identifierType;
+/// Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable paymentCategory;
+/// Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSDate * _Nullable fromDate;
+/// Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSDate * _Nullable endDate;
+/// Number of the document. Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable documentNumber;
+/// Date of the document. Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSDate * _Nullable documentDate;
+/// Liable person. Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable ultimateDebtor;
+/// \param description A description of the payment
+///
+/// \param currency The currency in which the payment is to be made
+///
+/// \param publicHash Merchant’s hash.
+///
+/// \param toIban The IBAN of the receiver.
+///
+/// \param emailNotification If you want to be notified by email.
+///
+/// \param sum The amount to be sent.
+///
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency publicHash:(NSString * _Nonnull)publicHash toIban:(NSString * _Nonnull)toIban emailNotification:(BOOL)emailNotification sum:(NSDecimal)sum OBJC_DESIGNATED_INITIALIZER;
+/// The init for budget payments.
+/// \param description A description of the payment
+///
+/// \param currency The currency in which the payment is to be made
+///
+/// \param publicHash Merchant’s hash.
+///
+/// \param toIban The IBAN of the receiver.
+///
+/// \param emailNotification If you want to be notified by email.
+///
+/// \param sum The amount to be sent.
+///
+/// \param regulatoryReportType 
+/// Accepted values for regulatoryReportType are: “1”, “2”, “3”, “4”, “5”, “6”, “9”.
+/// 1 - Declaration, 2 - Inspection Act, 3 - Penalty Decree, 4 - advance payment, 5 - batch property number, 6 - enforced collection order, 9 - others.
+/// Payment category pattern: ^[0-9]{6}?$
+/// Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param identifier Must provide EGN, EIK or PNF. Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param identifierType An enum specifying the type of the identifier. Available values: EGN, EIK or PNF. Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param paymentCategory Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param fromDate Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param endDate Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param documentNumber Number of the document. Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param documentDate Date of the document. Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param ultimateDebtor Liable person. Only needed for budget payments. Default value is <code>nil</code>.
+///
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency publicHash:(NSString * _Nonnull)publicHash toIban:(NSString * _Nonnull)toIban emailNotification:(BOOL)emailNotification sum:(NSDecimal)sum regulatoryReportType:(NSString * _Nonnull)regulatoryReportType identifier:(NSString * _Nonnull)identifier identifierType:(enum IPUIIdentifierType)identifierType paymentCategory:(NSString * _Nonnull)paymentCategory fromDate:(NSDate * _Nonnull)fromDate endDate:(NSDate * _Nonnull)endDate documentNumber:(NSString * _Nonnull)documentNumber documentDate:(NSDate * _Nonnull)documentDate ultimateDebtor:(NSString * _Nonnull)ultimateDebtor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL_NAMED("IPUIPaymentDelegate")
 @protocol IPUIPaymentDelegate <IPUIDelegate>
 @optional
 /// This method is deprecated. It will <em>NOT</em> be called anymore.
@@ -247,9 +458,76 @@ SWIFT_PROTOCOL("_TtP9IrisPayUI19IPUIPaymentDelegate_")
 - (void)paymentCompletedWithResult:(NSString * _Nullable)result;
 @end
 
+@class NSURL;
 
 SWIFT_CLASS_NAMED("IrisPayUI")
 @interface IrisPayUI : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonnull appearance;)
++ (IPUIAppearance * _Nonnull)appearance SWIFT_WARN_UNUSED_RESULT;
++ (void)setAppearance:(IPUIAppearance * _Nonnull)value;
+/// Initializes an IrisPayUI instance.
+/// If you don’t supply an appearance object, the default appearance will be used.
+/// \param irisHash The hash used to authenticate the Iris Pay user.
+///
+/// \param environment An enum specifying the environment which you’d like to use.
+///
+/// \param irisInstanceURL The URL of the IRIS PAY instance. The URL has to use HTTPS. If the URL is supplied it will be used regardless of the environment. If not supplied the default environment URLs will be used, so you must make sure you’re providing a valid URL.
+///
+/// \param appearance An object which specifies the colours and styles of the IrisPayUI views and elements. The default value is <code>IPUIAppearance()</code>.
+///
+/// \param language An enum specifying the language in which all the labels and texts will be displayed. The default value is Bulgarian.
+///
+- (nonnull instancetype)initWithIrisHash:(NSString * _Nonnull)irisHash environment:(enum IPUIEnvironment)environment irisInstanceURL:(NSURL * _Nullable)irisInstanceURL appearance:(IPUIAppearance * _Nonnull)appearance language:(enum IPUILanguage)language OBJC_DESIGNATED_INITIALIZER;
+- (void)setUserHash:(NSString * _Nonnull)hash;
+/// Starts the login flow.
+- (void)startLoginWithDelegate:(id <IPUIDelegate> _Nonnull)delegate;
+/// Starts the flow for adding the user’s IBAN(s).
+/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
+/// \param webhookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)addIBANWithWebhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIIbanDelegate> _Nonnull)delegate;
+/// Opens the callback URL which a banking app (e.g. Revolut) is instructed to open after the user has finished authorising their actions in said app.
+/// \param url The URL coming from the banking app.
+///
+- (void)openRedirectedURL:(NSURL * _Nonnull)url;
+/// Starts the payment flow without having to obtain consent from the bank.
+/// \param paymentModel The payment model object.
+///
+/// \param country If provided only banks from that country will be shown. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param hookHash Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)startPaymentWithoutConsentWithPaymentModel:(IPUIPayment * _Nonnull)paymentModel country:(NSString * _Nullable)country hookHash:(NSString * _Nullable)hookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIDelegate> _Nonnull)delegate;
+/// Starts the payment flow by using payment hash generated through Pay by Click
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     paymentHash - this is the hash in the end of a generated link in Pay by Click
+///   </li>
+/// </ul>
+- (void)payByClickWithPaymentHash:(NSString * _Nonnull)paymentHash delegate:(id <IPUIDelegate> _Nonnull)delegate;
+/// Starts a domestic / SEPA payment flow.
+/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
+/// \param country If provided only banks from that country will be shown. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)startDomesticOrSEPAPaymentWithCountry:(NSString * _Nullable)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
+/// Starts a budget payment flow.
+/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
+/// \param country If provided only banks from that country will be shown. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)startBudgetPaymentWithCountry:(NSString * _Nullable)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -470,6 +748,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -490,11 +770,100 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+enum IPUIInterfaceStyle : NSInteger;
+@class UIColor;
+@class UIFont;
+enum CornerCurve : NSInteger;
+
+SWIFT_CLASS_NAMED("IPUIAppearance")
+@interface IPUIAppearance : NSObject
+/// The light/dark mode setting. Set <code>.light</code> or <code>.dark</code> to force a particular mode. Default is <code>.unspecified</code>. It will follow the system setting.
+@property (nonatomic) enum IPUIInterfaceStyle interfaceStyle;
+/// The color which will be used to tint all the UI. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173141-systemblue">.systemBlue</a>.
+@property (nonatomic, strong) UIColor * _Nonnull tintColor;
+/// The color which will be used for the background of the form views.
+@property (nonatomic, strong) UIColor * _Nonnull backgroundColor;
+/// The font which will generally be used for the text labels. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body">Body</a> font.
+@property (nonatomic, strong) UIFont * _Nonnull bodyFont;
+/// The font which will generally be used for the more prominent labels. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body">Body</a> font  <em>bolded</em> and of 20 pt. size.
+@property (nonatomic, strong) UIFont * _Nonnull titleFont;
+/// The font which will be used for the navigation titles. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616702-headline">Headline</a> font.
+@property (nonatomic, strong) UIFont * _Nonnull navigationTitleFont;
+/// The color which will be used for the background of the list views.
+@property (nonatomic, strong) UIColor * _Nullable listBackgroundColor;
+/// The table style which will be used for the list view. The default is <a href="https://developer.apple.com/documentation/uikit/uitableview/style/plain">.plain</a>.
+@property (nonatomic) UITableViewStyle listStyle;
+/// The separator style which will be used in the list view. The default is <a href="https://developer.apple.com/documentation/uikit/uitableviewcell/separatorstyle/singleline">.singleLine</a>.
+@property (nonatomic) UITableViewCellSeparatorStyle listSeparatorStyle;
+/// The font which will be used for the item labels in the list view. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body">Body</a> font.
+@property (nonatomic, strong) UIFont * _Nullable listItemTitleLabelFont;
+/// The color for the main text labels in the list. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173131-label">.label</a>.
+@property (nonatomic, strong) UIColor * _Nonnull listItemTitleTextColor;
+/// The color for the detail text labels in the list. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173131-label">.label</a>.
+@property (nonatomic, strong) UIColor * _Nonnull listItemDetailTextColor;
+/// The height of the input fields. Default is 44 points.
+@property (nonatomic) CGFloat fieldHeight;
+/// The corner radius of the input fields. Default is 14 points. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic) CGFloat fieldCornerRadius;
+/// The way the input fields’ corners curve. Default is <code>.circular</code>.
+/// <code>.continuous</code> works only on iOS 13+.
+@property (nonatomic) enum CornerCurve fieldCornerCurve;
+/// The border width of the input fields. Default is 0 points. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic) CGFloat fieldBorderWidth;
+/// The border color of the input fields. Default is gray. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic, strong) UIColor * _Nonnull fieldBorderColor;
+/// The background color of the input fields. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173140-systembackground">.systemBackground</a>. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic, strong) UIColor * _Nullable fieldBackgroundColor;
+/// The background color of the input fields when they are disabled. Default is <code>#F9F9F9</code>. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic, strong) UIColor * _Nullable fieldDisabledBackgroundColor;
+/// The indentation of the text (on both sides) in the input fields. Default is 0 points. Applies only when <code>fieldBorderStyle</code> is <code>.none</code>.
+@property (nonatomic) CGFloat fieldTextIndent;
+/// The border style of the input fields. Default is <a href="https://developer.apple.com/documentation/uikit/uitextfield/borderstyle/roundedrect">.roundedRect</a>. Set to <a href="https://developer.apple.com/documentation/uikit/uitextfield/borderstyle/none">.none</a> for full customization.
+@property (nonatomic) UITextBorderStyle fieldBorderStyle;
+/// The font which will be used in the input fields. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body">Body</a> font.
+@property (nonatomic, strong) UIFont * _Nullable fieldFont;
+/// The color for the text in the input fields. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173131-label">.label</a>.
+@property (nonatomic, strong) UIColor * _Nonnull fieldTextColor;
+/// The color for the text in the input fields when they are disabled. Default is <a href="https://developer.apple.com/documentation/uikit/uicolor/3173136-secondarylabel">.secondaryLabel</a>.
+@property (nonatomic, strong) UIColor * _Nonnull fieldDisabledTextColor;
+/// The height of the buttons. Default is 36 points.
+@property (nonatomic) CGFloat buttonHeight;
+/// The corner radius of the buttons. Default is half the height: 18 points.
+@property (nonatomic) CGFloat buttonCornerRadius;
+/// The way the buttons’ corners curve. Default is <code>.circular</code>.
+/// <code>.continuous</code> works only on iOS 13+.
+@property (nonatomic) enum CornerCurve buttonCornerCurve;
+/// The font which will be used in the buttons. The default is the system <a href="https://developer.apple.com/documentation/uikit/uifont/textstyle/1616682-body">Body</a> font.
+@property (nonatomic, strong) UIFont * _Nullable buttonFont;
+/// The color which will be used for the background of the buttons. Default is <code>nil</code>.
+@property (nonatomic, strong) UIColor * _Nullable buttonBackgroundColor;
+/// The color for the text in the buttons. Default is the <code>tintColor</code>.
+@property (nonatomic, strong) UIColor * _Nonnull buttonTextColor;
+/// The inset or outset margins for the rectangle surrounding all of the button’s content.
+/// Use this property to resize and reposition the effective drawing rectangle for the button content. The content comprises the button image and button title. You can specify a different value for each of the four insets (top, left, bottom, right). A positive value shrinks, or insets, that edge—moving it closer to the center of the button. A negative value expands, or outsets, that edge. Use the <a href="https://developer.apple.com/documentation/uikit/uiedgeinsets/1625042-init">init(top:left:bottom:right:)</a> function to construct a value for this property. The default value is <a href="https://developer.apple.com/documentation/uikit/uiedgeinsets/1624518-zero">zero</a>.
+/// The button uses this property to determine <a href="https://developer.apple.com/documentation/uikit/uiview/1622600-intrinsiccontentsize">intrinsicContentSize</a> and <a href="https://developer.apple.com/documentation/uikit/uiview/1622625-sizethatfits">sizeThatFits(_:)</a>.
+@property (nonatomic) UIEdgeInsets buttonEdgeInsets;
+/// If this property is set to true, the text in the all the buttons will be uppercased. Default is <code>false</code>.
+@property (nonatomic) BOOL isButtonTextAllCaps;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+typedef SWIFT_ENUM(NSInteger, CornerCurve, open) {
+  CornerCurveCircular = 0,
+  CornerCurveContinuous = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, IPUIInterfaceStyle, open) {
+  IPUIInterfaceStyleLight = 0,
+  IPUIInterfaceStyleDark = 1,
+  IPUIInterfaceStyleUnspecified = 2,
+};
+
 @class NSString;
 
 /// Methods you use to observe the state of the processes you initiated in IrisPayUI.
 /// Your delegate must be an instance of <code>UIViewController</code>.
-SWIFT_PROTOCOL("_TtP9IrisPayUI12IPUIDelegate_")
+SWIFT_PROTOCOL_NAMED("IPUIDelegate")
 @protocol IPUIDelegate
 /// This method is called when the user has finished with their actions.
 /// You can use this method to dismiss the Iris Pay UI.
@@ -503,8 +872,128 @@ SWIFT_PROTOCOL("_TtP9IrisPayUI12IPUIDelegate_")
 - (void)readyWithResult:(NSString * _Nullable)result;
 @end
 
+typedef SWIFT_ENUM_NAMED(NSInteger, IPUIEnvironment, "IPUIEnvironment", open) {
+/// Use this to call the sandbox IrisPayUI environment. It’s preferable to use this during development.
+  IPUIEnvironmentSandbox = 0,
+/// Use this to call the production IrisPayUI environment.
+  IPUIEnvironmentProduction = 1,
+};
 
-SWIFT_PROTOCOL("_TtP9IrisPayUI19IPUIPaymentDelegate_")
+
+SWIFT_PROTOCOL_NAMED("IPUIIbanDelegate")
+@protocol IPUIIbanDelegate <IPUIDelegate>
+/// This method is called when the user has finished adding their IBANs.
+/// You can use this method to dismiss the Iris Pay UI.
+/// \param result Since the original <code>result</code> could be an arbitrary JSON element, it is passed to you as a <code>String</code>. If the user taps the close button this will be <code>nil</code>.
+///
+- (void)ibanAddedWithResult:(NSString * _Nullable)result;
+@end
+
+typedef SWIFT_ENUM_NAMED(NSInteger, IPUIIdentifierType, "IPUIIdentifierType", open) {
+  IPUIIdentifierTypeEGN = 0,
+  IPUIIdentifierTypeEIK = 1,
+  IPUIIdentifierTypePNF = 2,
+};
+
+typedef SWIFT_ENUM_NAMED(NSInteger, IPUILanguage, "IPUILanguage", open) {
+/// Bulgarian language
+  IPUILanguageBg = 0,
+/// English language
+  IPUILanguageEn = 1,
+};
+
+@class NSDate;
+
+SWIFT_CLASS_NAMED("IPUIPayment")
+@interface IPUIPayment : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull desc;
+/// The currency in which the payment is to be made
+@property (nonatomic, readonly, copy) NSString * _Nonnull currency;
+/// Merchant’s hash.
+@property (nonatomic, readonly, copy) NSString * _Nonnull publicHash;
+/// The IBAN of the receiver.
+@property (nonatomic, readonly, copy) NSString * _Nonnull toIban;
+/// If you want to be notified by email.
+@property (nonatomic, readonly) BOOL emailNotification;
+/// The amount to be sent.
+@property (nonatomic, readonly) NSDecimal sum;
+/// Accepted values for regulatoryReportType are: “1”, “2”, “3”, “4”, “5”, “6”, “9”.
+/// 1 - Declaration, 2 - Inspection Act, 3 - Penalty Decree, 4 - advance payment, 5 - batch property number, 6 - enforced collection order, 9 - others.
+/// Payment category pattern: ^[0-9]{6}?$
+/// Example: 110000.
+/// Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable regulatoryReportType;
+/// Must provide EGN, EIK or PNF. Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable identifier;
+/// An enum specifying the type of the identifier. Available values: EGN, EIK or PNF. Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable identifierType;
+/// Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable paymentCategory;
+/// Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSDate * _Nullable fromDate;
+/// Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSDate * _Nullable endDate;
+/// Number of the document. Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable documentNumber;
+/// Date of the document. Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSDate * _Nullable documentDate;
+/// Liable person. Only needed for budget payments.
+@property (nonatomic, readonly, copy) NSString * _Nullable ultimateDebtor;
+/// \param description A description of the payment
+///
+/// \param currency The currency in which the payment is to be made
+///
+/// \param publicHash Merchant’s hash.
+///
+/// \param toIban The IBAN of the receiver.
+///
+/// \param emailNotification If you want to be notified by email.
+///
+/// \param sum The amount to be sent.
+///
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency publicHash:(NSString * _Nonnull)publicHash toIban:(NSString * _Nonnull)toIban emailNotification:(BOOL)emailNotification sum:(NSDecimal)sum OBJC_DESIGNATED_INITIALIZER;
+/// The init for budget payments.
+/// \param description A description of the payment
+///
+/// \param currency The currency in which the payment is to be made
+///
+/// \param publicHash Merchant’s hash.
+///
+/// \param toIban The IBAN of the receiver.
+///
+/// \param emailNotification If you want to be notified by email.
+///
+/// \param sum The amount to be sent.
+///
+/// \param regulatoryReportType 
+/// Accepted values for regulatoryReportType are: “1”, “2”, “3”, “4”, “5”, “6”, “9”.
+/// 1 - Declaration, 2 - Inspection Act, 3 - Penalty Decree, 4 - advance payment, 5 - batch property number, 6 - enforced collection order, 9 - others.
+/// Payment category pattern: ^[0-9]{6}?$
+/// Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param identifier Must provide EGN, EIK or PNF. Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param identifierType An enum specifying the type of the identifier. Available values: EGN, EIK or PNF. Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param paymentCategory Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param fromDate Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param endDate Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param documentNumber Number of the document. Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param documentDate Date of the document. Only needed for budget payments. Default value is <code>nil</code>.
+///
+/// \param ultimateDebtor Liable person. Only needed for budget payments. Default value is <code>nil</code>.
+///
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency publicHash:(NSString * _Nonnull)publicHash toIban:(NSString * _Nonnull)toIban emailNotification:(BOOL)emailNotification sum:(NSDecimal)sum regulatoryReportType:(NSString * _Nonnull)regulatoryReportType identifier:(NSString * _Nonnull)identifier identifierType:(enum IPUIIdentifierType)identifierType paymentCategory:(NSString * _Nonnull)paymentCategory fromDate:(NSDate * _Nonnull)fromDate endDate:(NSDate * _Nonnull)endDate documentNumber:(NSString * _Nonnull)documentNumber documentDate:(NSDate * _Nonnull)documentDate ultimateDebtor:(NSString * _Nonnull)ultimateDebtor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL_NAMED("IPUIPaymentDelegate")
 @protocol IPUIPaymentDelegate <IPUIDelegate>
 @optional
 /// This method is deprecated. It will <em>NOT</em> be called anymore.
@@ -520,9 +1009,76 @@ SWIFT_PROTOCOL("_TtP9IrisPayUI19IPUIPaymentDelegate_")
 - (void)paymentCompletedWithResult:(NSString * _Nullable)result;
 @end
 
+@class NSURL;
 
 SWIFT_CLASS_NAMED("IrisPayUI")
 @interface IrisPayUI : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonnull appearance;)
++ (IPUIAppearance * _Nonnull)appearance SWIFT_WARN_UNUSED_RESULT;
++ (void)setAppearance:(IPUIAppearance * _Nonnull)value;
+/// Initializes an IrisPayUI instance.
+/// If you don’t supply an appearance object, the default appearance will be used.
+/// \param irisHash The hash used to authenticate the Iris Pay user.
+///
+/// \param environment An enum specifying the environment which you’d like to use.
+///
+/// \param irisInstanceURL The URL of the IRIS PAY instance. The URL has to use HTTPS. If the URL is supplied it will be used regardless of the environment. If not supplied the default environment URLs will be used, so you must make sure you’re providing a valid URL.
+///
+/// \param appearance An object which specifies the colours and styles of the IrisPayUI views and elements. The default value is <code>IPUIAppearance()</code>.
+///
+/// \param language An enum specifying the language in which all the labels and texts will be displayed. The default value is Bulgarian.
+///
+- (nonnull instancetype)initWithIrisHash:(NSString * _Nonnull)irisHash environment:(enum IPUIEnvironment)environment irisInstanceURL:(NSURL * _Nullable)irisInstanceURL appearance:(IPUIAppearance * _Nonnull)appearance language:(enum IPUILanguage)language OBJC_DESIGNATED_INITIALIZER;
+- (void)setUserHash:(NSString * _Nonnull)hash;
+/// Starts the login flow.
+- (void)startLoginWithDelegate:(id <IPUIDelegate> _Nonnull)delegate;
+/// Starts the flow for adding the user’s IBAN(s).
+/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
+/// \param webhookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)addIBANWithWebhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIIbanDelegate> _Nonnull)delegate;
+/// Opens the callback URL which a banking app (e.g. Revolut) is instructed to open after the user has finished authorising their actions in said app.
+/// \param url The URL coming from the banking app.
+///
+- (void)openRedirectedURL:(NSURL * _Nonnull)url;
+/// Starts the payment flow without having to obtain consent from the bank.
+/// \param paymentModel The payment model object.
+///
+/// \param country If provided only banks from that country will be shown. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param hookHash Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)startPaymentWithoutConsentWithPaymentModel:(IPUIPayment * _Nonnull)paymentModel country:(NSString * _Nullable)country hookHash:(NSString * _Nullable)hookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIDelegate> _Nonnull)delegate;
+/// Starts the payment flow by using payment hash generated through Pay by Click
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     paymentHash - this is the hash in the end of a generated link in Pay by Click
+///   </li>
+/// </ul>
+- (void)payByClickWithPaymentHash:(NSString * _Nonnull)paymentHash delegate:(id <IPUIDelegate> _Nonnull)delegate;
+/// Starts a domestic / SEPA payment flow.
+/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
+/// \param country If provided only banks from that country will be shown. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)startDomesticOrSEPAPaymentWithCountry:(NSString * _Nullable)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
+/// Starts a budget payment flow.
+/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
+/// \param country If provided only banks from that country will be shown. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)startBudgetPaymentWithCountry:(NSString * _Nullable)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
