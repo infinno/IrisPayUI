@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		yfLDMCAkV3GNDRm7QfMzsi5Pz4M=
+		Dgsrq2BOAOaIXexZ9TMyT2jGJ80=
 		</data>
 		<key>Headers/IrisPayUI-Swift.h</key>
 		<data>
-		Ql01xpWP8+7fJyPS5qiIexU4/4g=
+		HE/DVGunMZpwdCGBiWbhsK1f+eY=
 		</data>
 		<key>Headers/IrisPayUI.h</key>
 		<data>
@@ -22,31 +22,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9pHEQ6DTFrKDu8919kPtpuVce/Y=
+		XmF9XEWinAC8KvA7yc1I7yw8oD0=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		/6Vo5h/THSHXoKidDeQ4W8oyvCM=
+		OnSKKTzj+MJJEWnaVbkoWai25hQ=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		m1g+tDzv1e9Z4IqN4iY7Xzz/T9c=
+		c/ByInv650ztRBll1uAhlRmk2es=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bo56CtALIiXtn5Gn3yMlCsBiURI=
+		GISRTztltQ8NPjly5X/I79TQfag=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dY2KyISyPSwUEfYORFp5SThXzNA=
+		F+fG20qx6hyWKJal9o99cx1xFjQ=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jQ6JXbOVS7pcWdYTOdtorCssfCM=
+		CHZq3NDOQybwimE164c/Qq5QNYw=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		u2+JUaWaloZwqmX/Y6K0VbBcs+U=
+		/DnbIGM6qD7hAem9eG0derPYvoc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,14 +59,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZxItXKfNLq9fyyo3S7pwsW42mZYTAtwshChNvBIx4Yc=
+			l0VzkV+fj8CzD40MTWTFBrt4Ea9Tux32XCFB2VMxRQM=
 			</data>
 		</dict>
 		<key>Headers/IrisPayUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DLwYBLJnBUVUoPUteaMAC7GCWswsqUlqmPysSy1+nR0=
+			jlvx6MDrP7HZCCkaUEr91eAn/XVGFueA9SGyZnr8XdE=
 			</data>
 		</dict>
 		<key>Headers/IrisPayUI.h</key>
@@ -87,42 +87,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cvJhmLDonamO294zkPYvQhUTd5Ucwwkeb8JOVxlI6A0=
+			R/xsTClnFr//tHnxdqXYrPS5Zgcz/LuAAbiIOOAqBB4=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ePPkdnQBk1fzt+Ee+9jwNcZ72PAgm8CTOTMBWW85208=
+			GDBamMUT7BZCMJAEba+E8/uDxXMBLNa0EFQfjroH+FM=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vNMWMbxDGZBbwtt2UbdrhLORrc9jiiFmdUhpZAEeas0=
+			m2H0lT6bPBor1D/XZ6bAQlqrpDfaQiPMSQjEsG68eJA=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			56BooPV7r6oVmqsn3/GL3Wz0vRYg7df9p+GOuAJX85Y=
+			Sq7N8cbDGjuJJ0tt/xKstPDr/cLU+frWl6aVLjX2IOM=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oGYTj+fs2AY3ttcG9OnJUuZ4iDlsDylDVQvQzsmFfvI=
+			FBSQXFizKaSLqhirD+bXA1Nl5YZIkydf8SEjFflE6hk=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aelEVHcb3i5tFxFK3JCxZzvjoYvAigObVJkzoxV4rrQ=
+			R3Gp4ZfPuGBcvrnffj26fyCcPl/KAMiVYmsXgsMn3ok=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

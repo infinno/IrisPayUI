@@ -1,5 +1,9 @@
 # Release notes
 
+## v1.15.0 (40)
+- Added a new method called `startDomesticOrSEPAPayment`. Use it to make payments to a local or SEPA IBAN.
+- Added a new method called `startBudgetPayment`. Use it to make a budget payment.
+
 ## v1.14.2 (39)
 - Added support for changing the font of the labels and navigation bar titles.
 
