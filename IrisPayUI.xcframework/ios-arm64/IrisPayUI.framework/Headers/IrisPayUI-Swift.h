@@ -536,6 +536,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 
 
 
+
 @interface UITextField (SWIFT_EXTENSION(IrisPayUI))
 - (id _Nullable)targetForAction:(SEL _Nonnull)action withSender:(id _Nullable)sender SWIFT_WARN_UNUSED_RESULT;
 @end
