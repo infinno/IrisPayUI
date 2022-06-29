@@ -23,6 +23,7 @@ import _Concurrency
 }
 @objc(IrisPayUI) final public class IrisPayUI : ObjectiveC.NSObject {
   @objc public static var appearance: IrisPayUI.IPUIAppearance
+  @objc deinit
   @available(*, unavailable, renamed: "init(irisHash:environment:irisInstanceURL:appearance:language:)")
   public init(irisHash: Swift.String, irisURL: Foundation.URL? = nil, appearance: IrisPayUI.IPUIAppearance = IPUIAppearance(), language: IrisPayUI.IPUILanguage = .bg)
   @objc public init(irisHash: Swift.String, environment: IrisPayUI.IPUIEnvironment, irisInstanceURL: Foundation.URL? = nil, appearance: IrisPayUI.IPUIAppearance = IPUIAppearance(), language: IrisPayUI.IPUILanguage = .bg)
@@ -38,7 +39,6 @@ import _Concurrency
   final public func startPayment(withIBAN iban: Swift.String? = nil, delegate: IrisPayUI.IPUIDelegate)
   @available(*, deprecated, message: "This method should not be used anymore and may not work correctly.")
   final public func confirmPayment(withCode code: Swift.String, webhookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIPaymentDelegate)
-  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(IPUIAppearance) public class IPUIAppearance : ObjectiveC.NSObject {
   @objc public enum CornerCurve : Swift.Int {

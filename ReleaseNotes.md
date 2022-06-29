@@ -1,5 +1,9 @@
 # Release notes
 
+## v1.17.0 (42)
+- Added support for a new field type: `date`. Tapping it shows a date picker.
+- Future new field types shouldn't crash the framework any more.
+
 ## v1.16.0 (41)
 - Exposed the public classes, methods, enums, etc. to Objective-C.
 

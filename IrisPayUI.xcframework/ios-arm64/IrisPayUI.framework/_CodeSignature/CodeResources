@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Dgsrq2BOAOaIXexZ9TMyT2jGJ80=
+		HGCXuYgKUOK3iZJVP6L7yEQfbZA=
 		</data>
 		<key>Headers/IrisPayUI-Swift.h</key>
 		<data>
-		XLl6cubLY5Gfa96fI/oW4he7zBA=
+		BaDpXPF3bDMziL7pKpKRTlrFPGo=
 		</data>
 		<key>Headers/IrisPayUI.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TpDwHCJ0qNy0x+cYo9ZldbEgd4w=
+		PXVy/A1MHbgPyZPzV3aIuv24/k0=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,16 +30,34 @@
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		EuibnNkKRynfkaQMKBvLKAN3oFU=
+		EK+k7ANI1jfy2awpmnUlfmZ3SuY=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		AswplYb2YmIpT4YUKx3WbYZR6cI=
+		BKF0ith5NBNC0Yl0RsTmm/HPf2Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		/ASbZtPWKrKQt3nRmgO1A97bQ+A=
 		</data>
+		<key>bg.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vIESpqCWN8a7i7LBGmixmr+c0ks=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nIUtPAs9JOGed9rzNQmjl+pgTBo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -47,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l0VzkV+fj8CzD40MTWTFBrt4Ea9Tux32XCFB2VMxRQM=
+			IUnemo410N6YI1yXCiC6aC2zmSeF9RIeRy81SDcVVBI=
 			</data>
 		</dict>
 		<key>Headers/IrisPayUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M1Ey7J3JT9V8ugFSQ4gA8MJi8NDIl3IM2pNkoyfLV9o=
+			IuSV2T5bsDqSBX13AGdJn15Cl4Ay5tAFbD9NRhhGc50=
 			</data>
 		</dict>
 		<key>Headers/IrisPayUI.h</key>
@@ -82,14 +100,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZAzYVps3xNZhePljTE3pHS6ROEXKy5nSoemtqEWWrWM=
+			rKH6lzw5NOfzYl8FX6gIzaSxthqoDact93pQdBSvvNg=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dhWSj4AaUJmJhHbJbMEdCJHpfxaVjyEAnBNiLqOOGxI=
+			pvk2mjDhndfg7uyrOASMrXZFjRooVff2f9FMVO/Avew=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -98,6 +116,24 @@
 			<data>
 			wkb+ac8AeMk0msaPuZgz/OvLPqBORknJ1nZn8bu42Hg=
 			</data>
+		</dict>
+		<key>bg.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KZ8rZiQ29BRCS3RrpCEPkzpQ8VqR8YJkBjeSWHbKGmo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0L4ToabpDv3GPsBY+jV93F71wafGHe6mEbyw6oPhw6E=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>
