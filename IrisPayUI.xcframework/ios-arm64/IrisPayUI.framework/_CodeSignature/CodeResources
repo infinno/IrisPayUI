@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/IrisPayUI-Swift.h</key>
 		<data>
-		BaDpXPF3bDMziL7pKpKRTlrFPGo=
+		qcobdHjtiISxGWfYmWXq0B1V+ms=
 		</data>
 		<key>Headers/IrisPayUI.h</key>
 		<data>
@@ -26,15 +26,15 @@
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		/2JEWz9eGHhDDDjTrDM+ilowC6M=
+		gGP9tK557f36jzk1jbrJRxB8U4k=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		hRVt3S+irjcGaejPDb7UgOjSJbE=
+		D/Z66Pp/bDKYxXOm0nkhEqXq3gE=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		frtIW05iuKtYz0Ko5vxsLVn243o=
+		RPFgZfEzgs6D2vr1z5UJqGKDlpQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,7 +72,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IuSV2T5bsDqSBX13AGdJn15Cl4Ay5tAFbD9NRhhGc50=
+			he71pXVvfKZrDGlF+DFSfvbQSSeY5ioKxXaJffjyCV0=
 			</data>
 		</dict>
 		<key>Headers/IrisPayUI.h</key>
@@ -93,21 +93,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			feF3YpvqigWHrfqr5da4956Iur9K2L+rIFf2Zr7xyF4=
+			Qsw2o+WXwsbeIN2BN53/N7WNA7Sf3R25Upe0YfPTFwI=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gcxMY5uWZp+C5I3ZQ8KlPqwAd3I4ZxZ+2KSKR9Yzwwc=
+			Tx1EgHE0wIH/D2jsBw3p9LsOFxGJ/sZVTfNStA1zRbI=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KLXiqJhnpLaL5HjPR+O8l+J141PKbtt6E5a2Vn5ghWg=
+			atJR73JDbHpA4dCFJczq77wNSAi+HRURfW0S2gus8bE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -528,6 +528,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 /// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
 ///
 - (void)startBudgetPaymentWithCountry:(NSString * _Nullable)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
+/// Confirms the created payment.
+/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
+/// \param code The six-digit confirmation codе.
+///
+/// \param webhookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)confirmPaymentWithCode:(NSString * _Nonnull)code webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1080,6 +1087,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 /// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
 ///
 - (void)startBudgetPaymentWithCountry:(NSString * _Nullable)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
+/// Confirms the created payment.
+/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
+/// \param code The six-digit confirmation codе.
+///
+/// \param webhookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)confirmPaymentWithCode:(NSString * _Nonnull)code webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
