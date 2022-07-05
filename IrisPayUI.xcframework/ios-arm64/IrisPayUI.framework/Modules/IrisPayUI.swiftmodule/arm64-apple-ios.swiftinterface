@@ -35,10 +35,9 @@ import _Concurrency
   @objc final public func payByClick(paymentHash: Swift.String, delegate: IPUIDelegate)
   @objc final public func startDomesticOrSEPAPayment(country: Swift.String? = nil, hookHash webhookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IPUIPaymentDelegate)
   @objc final public func startBudgetPayment(country: Swift.String? = nil, hookHash webhookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IPUIPaymentDelegate)
+  @objc final public func confirmPayment(withCode code: Swift.String, webhookHash: Swift.String? = nil, delegate: IPUIPaymentDelegate)
   @available(*, deprecated, message: "This method should not be used anymore and may not work correctly.")
   final public func startPayment(withIBAN iban: Swift.String? = nil, delegate: IPUIDelegate)
-  @available(*, deprecated, message: "This method should not be used anymore and may not work correctly.")
-  final public func confirmPayment(withCode code: Swift.String, webhookHash: Swift.String? = nil, delegate: IPUIPaymentDelegate)
 }
 @_inheritsConvenienceInitializers @objc(IPUIAppearance) public class IPUIAppearance : ObjectiveC.NSObject {
   @objc public enum CornerCurve : Swift.Int {

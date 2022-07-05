@@ -1,8 +1,12 @@
 # Release notes
 
+## v1.17.1 (43)
+- The method `IrisPayUI.confirmPayment(withCode:webhookHash:delegate:)` shouldn’t have been deprecated. Sorry about that.
+- Bug fixes and performance improvements.
+
 ## v1.17.0 (42)
 - Added support for a new field type: `date`. Tapping it shows a date picker.
-- Future new field types shouldn't crash the framework any more.
+- Future new field types shouldn’t crash the framework any more.
 
 ## v1.16.0 (41)
 - Exposed the public classes, methods, enums, etc. to Objective-C.
@@ -18,7 +22,7 @@
 - Fixed possible multiple calling of the delegate methods for a single operation.
 
 ## v1.14 (37)
-- Won't do any automatic dismissal of the web view; instead we track the `closeWindow` property.
+- Won’t do any automatic dismissal of the web view; instead we track the `closeWindow` property.
 - Fixed the scrolling in the `IPUIFormControllers` when there are no visible fields.
 - Deprecated the `IPUIPaymentDelegate.gotConsent(_:)` method.
 - Bug fixes and performance improvements.
