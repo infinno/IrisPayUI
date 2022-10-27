@@ -1,5 +1,8 @@
 # Release notes
 
+## v1.18.0 (44)
+- Labels containing HTML will now be rendered properly.
+
 ## v1.17.1 (43)
 - The method `IrisPayUI.confirmPayment(withCode:webhookHash:delegate:)` shouldn’t have been deprecated. Sorry about that.
 - Bug fixes and performance improvements.

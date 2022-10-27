@@ -8,7 +8,7 @@ Once you have your Swift package set up, adding IrisPayUI as a dependency is as 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/infinno/IrisPayUI.git", .upToNextMajor(from: "1.17.1"))
+    .package(url: "https://github.com/infinno/IrisPayUI.git", .upToNextMajor(from: "1.18.0"))
 ]
 ```
 
