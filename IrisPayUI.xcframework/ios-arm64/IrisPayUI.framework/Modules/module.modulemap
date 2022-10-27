@@ -6,6 +6,6 @@ framework module IrisPayUI {
 }
 
 module IrisPayUI.Swift {
-    header "IrisPayUI-Swift.h"
-    requires objc
+  header "IrisPayUI-Swift.h"
+  requires objc
 }
