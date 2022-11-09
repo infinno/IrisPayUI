@@ -664,12 +664,27 @@
           {
             "kind": "Function",
             "name": "addIBAN",
-            "printedName": "addIBAN(withWebhookHash:delegate:)",
+            "printedName": "addIBAN(withBankHash:webhookHash:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -694,10 +709,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@IrisPayUI@objc(cs)IrisPayUI(im)addIBANWithWebhookHash:delegate:",
-            "mangledName": "$s9IrisPayUIAAC7addIBAN15withWebhookHash8delegateySSSg_AA16IPUIIbanDelegate_ptF",
+            "usr": "c:@M@IrisPayUI@objc(cs)IrisPayUI(im)addIBANWithBankHash:webhookHash:delegate:",
+            "mangledName": "$s9IrisPayUIAAC7addIBAN12withBankHash07webhookH08delegateySSSg_AgA16IPUIIbanDelegate_ptF",
             "moduleName": "IrisPayUI",
-            "objc_name": "addIBANWithWebhookHash:delegate:",
+            "objc_name": "addIBANWithBankHash:webhookHash:delegate:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -1004,8 +1019,8 @@
           },
           {
             "kind": "Function",
-            "name": "confirmPayment",
-            "printedName": "confirmPayment(withCode:webhookHash:delegate:)",
+            "name": "paymentWithCode",
+            "printedName": "paymentWithCode(_:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1020,31 +1035,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "IPUIPaymentDelegate",
                 "printedName": "IrisPayUI.IPUIPaymentDelegate",
                 "usr": "c:@M@IrisPayUI@objc(pl)IPUIPaymentDelegate"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@IrisPayUI@objc(cs)IrisPayUI(im)confirmPaymentWithCode:webhookHash:delegate:",
-            "mangledName": "$s9IrisPayUIAAC14confirmPayment8withCode11webhookHash8delegateySS_SSSgAA19IPUIPaymentDelegate_ptF",
+            "usr": "c:@M@IrisPayUI@objc(cs)IrisPayUI(im)paymentWithCode:delegate:",
+            "mangledName": "$s9IrisPayUIAAC15paymentWithCode_8delegateySS_AA19IPUIPaymentDelegate_ptF",
             "moduleName": "IrisPayUI",
-            "objc_name": "confirmPaymentWithCode:webhookHash:delegate:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -1093,6 +1092,59 @@
             "declAttributes": [
               "Final",
               "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "confirmPayment",
+            "printedName": "confirmPayment(withCode:webhookHash:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IPUIPaymentDelegate",
+                "printedName": "IrisPayUI.IPUIPaymentDelegate",
+                "usr": "c:@M@IrisPayUI@objc(pl)IPUIPaymentDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@IrisPayUI@objc(cs)IrisPayUI(im)confirmPaymentWithCode:webhookHash:delegate:",
+            "mangledName": "$s9IrisPayUIAAC14confirmPayment8withCode11webhookHash8delegateySS_SSSgAA19IPUIPaymentDelegate_ptF",
+            "moduleName": "IrisPayUI",
+            "deprecated": true,
+            "objc_name": "confirmPaymentWithCode:webhookHash:delegate:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
               "Available",
               "RawDocComment"
             ],
