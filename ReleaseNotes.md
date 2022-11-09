@@ -1,5 +1,9 @@
 # Release notes
 
+## v1.19.0 (45)
+- Renamed the method `IrisPayUI.confirmPayment(withCode:webhookHash:delegate:)` to `IrisPayUI.paymentWithCode(_:delegate:)`. The code should also be in the form of a UUID/GUID.
+- The `IrisPayUI.addIBAN` method can now accept a bank hash to directly start the process of adding an IBAN from that specific bank, without showing the banks list.
+
 ## v1.18.0 (44)
 - Labels containing HTML will now be rendered properly.
 

@@ -518,10 +518,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 /// Starts the login flow.
 - (void)startLoginWithDelegate:(id <IPUIDelegate> _Nonnull)delegate;
 /// Starts the flow for adding the user’s IBAN(s).
+/// If you have the hash of a concrete bank you can supply it and the SDK will open the form for adding an IBAN for that bank.
 /// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
+/// \param bankHash The hash of a bank you wish to add an account from. Default value is <code>nil</code>. This parameter is optional.
+///
 /// \param webhookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///
-- (void)addIBANWithWebhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIIbanDelegate> _Nonnull)delegate;
+- (void)addIBANWithBankHash:(NSString * _Nullable)bankHash webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIIbanDelegate> _Nonnull)delegate;
 /// Opens the callback URL which a banking app (e.g. Revolut) is instructed to open after the user has finished authorising their actions in said app.
 /// \param url The URL coming from the banking app.
 ///
@@ -564,13 +567,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 /// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
 ///
 - (void)startBudgetPaymentWithCountry:(NSString * _Nullable)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
+/// Starts a payment flow where you can supply a UUID for a specific payment. Can be used for refunds.
+/// \param code The UUID.
+///
+- (void)paymentWithCode:(NSString * _Nonnull)code delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
 /// Confirms the created payment.
 /// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
 /// \param code The six-digit confirmation codе.
 ///
 /// \param webhookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///
-- (void)confirmPaymentWithCode:(NSString * _Nonnull)code webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
+- (void)confirmPaymentWithCode:(NSString * _Nonnull)code webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate SWIFT_DEPRECATED_MSG("This method should not be used anymore and may not work correctly.", "paymentWithCode:delegate:");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1117,10 +1124,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 /// Starts the login flow.
 - (void)startLoginWithDelegate:(id <IPUIDelegate> _Nonnull)delegate;
 /// Starts the flow for adding the user’s IBAN(s).
+/// If you have the hash of a concrete bank you can supply it and the SDK will open the form for adding an IBAN for that bank.
 /// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
+/// \param bankHash The hash of a bank you wish to add an account from. Default value is <code>nil</code>. This parameter is optional.
+///
 /// \param webhookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///
-- (void)addIBANWithWebhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIIbanDelegate> _Nonnull)delegate;
+- (void)addIBANWithBankHash:(NSString * _Nullable)bankHash webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIIbanDelegate> _Nonnull)delegate;
 /// Opens the callback URL which a banking app (e.g. Revolut) is instructed to open after the user has finished authorising their actions in said app.
 /// \param url The URL coming from the banking app.
 ///
@@ -1163,13 +1173,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 /// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
 ///
 - (void)startBudgetPaymentWithCountry:(NSString * _Nullable)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
+/// Starts a payment flow where you can supply a UUID for a specific payment. Can be used for refunds.
+/// \param code The UUID.
+///
+- (void)paymentWithCode:(NSString * _Nonnull)code delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
 /// Confirms the created payment.
 /// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
 /// \param code The six-digit confirmation codе.
 ///
 /// \param webhookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///
-- (void)confirmPaymentWithCode:(NSString * _Nonnull)code webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
+- (void)confirmPaymentWithCode:(NSString * _Nonnull)code webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate SWIFT_DEPRECATED_MSG("This method should not be used anymore and may not work correctly.", "paymentWithCode:delegate:");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
