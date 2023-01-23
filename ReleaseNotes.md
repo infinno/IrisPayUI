@@ -1,5 +1,10 @@
 # Release notes
 
+## v1.20.0 (46)
+- Added a new enum `IPUISupportedCountry` to be used in all methods which have a `country` parameter.
+- Added a `country` parameter to the `IrisPayUI.addIBAN` method which controls which country's banks will be shown in the list.
+- More descriptive error messages.
+
 ## v1.19.0 (45)
 - Renamed the method `IrisPayUI.confirmPayment(withCode:webhookHash:delegate:)` to `IrisPayUI.paymentWithCode(_:delegate:)`. The code should also be in the form of a UUID/GUID.
 - The `IrisPayUI.addIBAN` method can now accept a bank hash to directly start the process of adding an IBAN from that specific bank, without showing the banks list.

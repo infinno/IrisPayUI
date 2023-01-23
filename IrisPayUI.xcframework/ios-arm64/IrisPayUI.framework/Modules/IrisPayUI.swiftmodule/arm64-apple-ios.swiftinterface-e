@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IrisPayUI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -23,6 +23,22 @@ import _StringProcessing
     get
   }
 }
+@objc(IPUISupportedCountry) public enum IPUISupportedCountry : Swift.Int, Swift.CaseIterable {
+  case all
+  case bulgaria
+  case greece
+  case romania
+  case slovakia
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [IrisPayUI.IPUISupportedCountry]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [IrisPayUI.IPUISupportedCountry] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc(IrisPayUI) final public class IrisPayUI : ObjectiveC.NSObject {
   @objc public static var appearance: IrisPayUI.IPUIAppearance
   @objc deinit
@@ -31,12 +47,12 @@ import _StringProcessing
   @objc public init(irisHash: Swift.String, environment: IrisPayUI.IPUIEnvironment, irisInstanceURL: Foundation.URL? = nil, appearance: IrisPayUI.IPUIAppearance = IPUIAppearance(), language: IrisPayUI.IPUILanguage = .bg)
   @objc final public func setUserHash(_ hash: Swift.String)
   @objc final public func startLogin(delegate: IrisPayUI.IPUIDelegate)
-  @objc final public func addIBAN(withBankHash bankHash: Swift.String? = nil, webhookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIIbanDelegate)
+  @objc final public func addIBAN(withBankHash bankHash: Swift.String? = nil, country: IrisPayUI.IPUISupportedCountry = .all, webhookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIIbanDelegate)
   @objc final public func openRedirectedURL(_ url: Foundation.URL)
-  @objc final public func startPaymentWithoutConsent(paymentModel: IrisPayUI.IPUIPayment, country: Swift.String? = nil, hookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIDelegate)
+  @objc final public func startPaymentWithoutConsent(paymentModel: IrisPayUI.IPUIPayment, country: IrisPayUI.IPUISupportedCountry = .all, hookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIDelegate)
   @objc final public func payByClick(paymentHash: Swift.String, delegate: IrisPayUI.IPUIDelegate)
-  @objc final public func startDomesticOrSEPAPayment(country: Swift.String? = nil, hookHash webhookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIPaymentDelegate)
-  @objc final public func startBudgetPayment(country: Swift.String? = nil, hookHash webhookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIPaymentDelegate)
+  @objc final public func startDomesticOrSEPAPayment(country: IrisPayUI.IPUISupportedCountry = .all, hookHash webhookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIPaymentDelegate)
+  @objc final public func startBudgetPayment(country: IrisPayUI.IPUISupportedCountry = .all, hookHash webhookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIPaymentDelegate)
   @objc final public func paymentWithCode(_ code: Swift.String, delegate: IrisPayUI.IPUIPaymentDelegate)
   @available(*, deprecated, message: "This method should not be used anymore and may not work correctly.")
   final public func startPayment(withIBAN iban: Swift.String? = nil, delegate: IrisPayUI.IPUIDelegate)
@@ -64,6 +80,7 @@ import _StringProcessing
   @objc public var tintColor: UIKit.UIColor
   @objc public var backgroundColor: UIKit.UIColor
   @objc public var bodyFont: UIKit.UIFont
+  @objc public var emphasizedBodyFont: UIKit.UIFont
   @objc public var titleFont: UIKit.UIFont
   @objc public var navigationTitleFont: UIKit.UIFont
   @objc public var listBackgroundColor: UIKit.UIColor?
@@ -172,6 +189,9 @@ public protocol IrisUIDelegate : UIKit.UIViewController {
 extension IrisPayUI.IPUILanguage : Swift.Equatable {}
 extension IrisPayUI.IPUILanguage : Swift.Hashable {}
 extension IrisPayUI.IPUILanguage : Swift.RawRepresentable {}
+extension IrisPayUI.IPUISupportedCountry : Swift.Equatable {}
+extension IrisPayUI.IPUISupportedCountry : Swift.Hashable {}
+extension IrisPayUI.IPUISupportedCountry : Swift.RawRepresentable {}
 extension IrisPayUI.IPUIAppearance.CornerCurve : Swift.Equatable {}
 extension IrisPayUI.IPUIAppearance.CornerCurve : Swift.Hashable {}
 extension IrisPayUI.IPUIAppearance.CornerCurve : Swift.RawRepresentable {}
