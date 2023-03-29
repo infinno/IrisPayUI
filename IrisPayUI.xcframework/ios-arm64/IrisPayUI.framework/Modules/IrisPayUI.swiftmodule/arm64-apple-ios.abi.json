@@ -8353,98 +8353,112 @@
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2000,
+      "offset": 2016,
+      "length": 3,
+      "value": "\"A\""
+    },
+    {
+      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 2022,
+      "length": 3,
+      "value": "\"Z\""
+    },
+    {
+      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 2161,
       "length": 22,
       "value": "\"eu.infinno.IrisPayUI\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2097,
+      "offset": 2258,
       "length": 14,
       "value": "\"CFBundleName\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2195,
+      "offset": 2356,
       "length": 20,
       "value": "\"CFBundleIdentifier\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2300,
+      "offset": 2461,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2411,
+      "offset": 2572,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2523,
+      "offset": 2684,
       "length": 20,
       "value": "\"CFBundleIdentifier\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2635,
+      "offset": 2796,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2753,
+      "offset": 2914,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2935,
+      "offset": 3096,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2946,
+      "offset": 3107,
       "length": 1,
       "value": "\" (\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2956,
+      "offset": 3117,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3002,
+      "offset": 3163,
       "length": 35,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3019,
+      "offset": 3180,
       "length": 1,
       "value": "\" (\""
     },
     {
       "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3035,
+      "offset": 3196,
       "length": 1,
       "value": "\")\""
     },
