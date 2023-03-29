@@ -1,5 +1,8 @@
 # Release notes
 
+## v1.21.0 (47)
+- IBAN fields will now accept uppercase ASCII letters and numbers only.
+
 ## v1.20.0 (46)
 - Added a new enum `IPUISupportedCountry` to be used in all methods which have a `country` parameter.
 - Added a `country` parameter to the `IrisPayUI.addIBAN` method which controls which country's banks will be shown in the list.

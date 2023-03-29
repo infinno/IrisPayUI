@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DGW3hLXSGMFQecvZeMxBjOXI9O4=
+		G4K4DhUwNqndLY3X30O9R/V4MoI=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		xo49Zd8R3LfRyU0Qu1UKh+kYiBc=
+		o4t1Zujivr8ZZIV/uAiA4zkRo1Y=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EY3jVSQ1/ldgy6rM51CNrtGVxm0=
+		ise/YbArglXVLOYtj4fzVM3jJXQ=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		xo49Zd8R3LfRyU0Qu1UKh+kYiBc=
+		o4t1Zujivr8ZZIV/uAiA4zkRo1Y=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		M/txD/FuUQyHaZiqsE3CBOE9n4Q=
+		+ehtCvpgHuDeXuff3NKiDNBuons=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -121,7 +121,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p5BjnRygDXBJUcjNfcENzXkcR16b5d8KyLJbiwf4IoE=
+			zaxhBqksTy4AKv8BdZK21g5t2kqB+n2+KV/0xc5Jgfg=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -149,14 +149,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LGzqkPDCG/Uu8zVoNKE835s24fPsYcBcn9lh2OtytjA=
+			YcmcWG3QY4gj8KR0OJpp9z2X/tSP419wy7UJXMQc9aU=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p5BjnRygDXBJUcjNfcENzXkcR16b5d8KyLJbiwf4IoE=
+			zaxhBqksTy4AKv8BdZK21g5t2kqB+n2+KV/0xc5Jgfg=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -184,7 +184,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CQdfvXiUbutm49dhUy9npvXubZ6JDvnnYVXMWLPFrmY=
+			UZjgU9LW5lvZk4U06+3xjFyvarMcSKPUhvj6bx01mIM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
