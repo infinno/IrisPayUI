@@ -1,5 +1,8 @@
 # Release notes
 
+## v1.21.1 (48)
+- IBAN fields will now also accept lowercase ASCII letters and transform them to UPPERCASE.
+
 ## v1.21.0 (47)
 - IBAN fields will now accept uppercase ASCII letters and numbers only.
 
