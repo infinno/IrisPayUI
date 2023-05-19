@@ -1,5 +1,8 @@
 # Release notes
 
+## v1.22.0 (49)
+- Fixed: some payments called the `IPUIPaymentDelegate.ready(result:)` method instead of the `IPUIPaymentDelegate.paymentCompleted(result:)` method.
+
 ## v1.21.1 (48)
 - IBAN fields will now also accept lowercase ASCII letters and transform them to UPPERCASE.
 
