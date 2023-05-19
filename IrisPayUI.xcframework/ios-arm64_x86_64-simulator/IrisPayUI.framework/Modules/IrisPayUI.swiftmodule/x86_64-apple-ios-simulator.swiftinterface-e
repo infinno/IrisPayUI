@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IrisPayUI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -46,18 +46,18 @@ import _StringProcessing
   public init(irisHash: Swift.String, irisURL: Foundation.URL? = nil, appearance: IrisPayUI.IPUIAppearance = IPUIAppearance(), language: IrisPayUI.IPUILanguage = .bg)
   @objc public init(irisHash: Swift.String, environment: IrisPayUI.IPUIEnvironment, irisInstanceURL: Foundation.URL? = nil, appearance: IrisPayUI.IPUIAppearance = IPUIAppearance(), language: IrisPayUI.IPUILanguage = .bg)
   @objc final public func setUserHash(_ hash: Swift.String)
-  @objc final public func startLogin(delegate: IrisPayUI.IPUIDelegate)
-  @objc final public func addIBAN(withBankHash bankHash: Swift.String? = nil, country: IrisPayUI.IPUISupportedCountry = .all, webhookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIIbanDelegate)
+  @objc final public func startLogin(delegate: any IrisPayUI.IPUIDelegate)
+  @objc final public func addIBAN(withBankHash bankHash: Swift.String? = nil, country: IrisPayUI.IPUISupportedCountry = .all, webhookHash: Swift.String? = nil, delegate: any IrisPayUI.IPUIIbanDelegate)
   @objc final public func openRedirectedURL(_ url: Foundation.URL)
-  @objc final public func startPaymentWithoutConsent(paymentModel: IrisPayUI.IPUIPayment, country: IrisPayUI.IPUISupportedCountry = .all, hookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIDelegate)
-  @objc final public func payByClick(paymentHash: Swift.String, delegate: IrisPayUI.IPUIDelegate)
-  @objc final public func startDomesticOrSEPAPayment(country: IrisPayUI.IPUISupportedCountry = .all, hookHash webhookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIPaymentDelegate)
-  @objc final public func startBudgetPayment(country: IrisPayUI.IPUISupportedCountry = .all, hookHash webhookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIPaymentDelegate)
-  @objc final public func paymentWithCode(_ code: Swift.String, delegate: IrisPayUI.IPUIPaymentDelegate)
+  @objc final public func startPaymentWithoutConsent(paymentModel: IrisPayUI.IPUIPayment, country: IrisPayUI.IPUISupportedCountry = .all, hookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: any IrisPayUI.IPUIDelegate)
+  @objc final public func payByClick(paymentHash: Swift.String, delegate: any IrisPayUI.IPUIDelegate)
+  @objc final public func startDomesticOrSEPAPayment(country: IrisPayUI.IPUISupportedCountry = .all, hookHash webhookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: any IrisPayUI.IPUIPaymentDelegate)
+  @objc final public func startBudgetPayment(country: IrisPayUI.IPUISupportedCountry = .all, hookHash webhookHash: Swift.String? = nil, ibanHookHash: Swift.String? = nil, delegate: any IrisPayUI.IPUIPaymentDelegate)
+  @objc final public func paymentWithCode(_ code: Swift.String, delegate: any IrisPayUI.IPUIPaymentDelegate)
   @available(*, deprecated, message: "This method should not be used anymore and may not work correctly.")
-  final public func startPayment(withIBAN iban: Swift.String? = nil, delegate: IrisPayUI.IPUIDelegate)
+  final public func startPayment(withIBAN iban: Swift.String? = nil, delegate: any IrisPayUI.IPUIDelegate)
   @available(*, deprecated, renamed: "paymentWithCode(_:delegate:)", message: "This method should not be used anymore and may not work correctly.")
-  @objc final public func confirmPayment(withCode code: Swift.String, webhookHash: Swift.String? = nil, delegate: IrisPayUI.IPUIPaymentDelegate)
+  @objc final public func confirmPayment(withCode code: Swift.String, webhookHash: Swift.String? = nil, delegate: any IrisPayUI.IPUIPaymentDelegate)
 }
 @_inheritsConvenienceInitializers @objc(IPUIAppearance) public class IPUIAppearance : ObjectiveC.NSObject {
   @objc public enum CornerCurve : Swift.Int {
@@ -136,7 +136,7 @@ import _StringProcessing
   @objc final public let ultimateDebtor: Swift.String?
   @objc public init(description: Swift.String, currency: Swift.String, publicHash: Swift.String, toIban: Swift.String, emailNotification: Swift.Bool, sum: Foundation.Decimal)
   @objc public init(description: Swift.String, currency: Swift.String, publicHash: Swift.String, toIban: Swift.String, emailNotification: Swift.Bool, sum: Foundation.Decimal, regulatoryReportType: Swift.String, identifier: Swift.String, identifierType: IrisPayUI.IPUIIdentifierType, paymentCategory: Swift.String, fromDate: Foundation.Date, endDate: Foundation.Date, documentNumber: Swift.String, documentDate: Foundation.Date, ultimateDebtor: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 extension UIKit.UITextField {
