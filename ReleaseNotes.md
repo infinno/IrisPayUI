@@ -1,5 +1,9 @@
 # Release notes
 
+## v1.22.1 (50)
+- Fixed some buttons not having any text in some cases.
+- Fixed missing IBANs from dropdown fields.
+
 ## v1.22.0 (49)
 - Fixed: some payments called the `IPUIPaymentDelegate.ready(result:)` method instead of the `IPUIPaymentDelegate.paymentCompleted(result:)` method.
 
