@@ -1,14 +1,16 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IrisPayUI
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name IrisPayUI
+import DeveloperToolsSupport
 import Foundation
 @_exported import IrisPayUI
 import Swift
+import SwiftUI
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc(IPUILanguage) public enum IPUILanguage : Swift.Int, Swift.CaseIterable {
   case bg
   case en
@@ -125,16 +127,44 @@ import _StringProcessing
   @objc final public let toIban: Swift.String
   @objc final public let emailNotification: Swift.Bool
   @objc final public let sum: Foundation.Decimal
-  @objc final public let regulatoryReportType: Swift.String?
-  @objc final public let identifier: Swift.String?
-  @objc final public let identifierType: Swift.String?
-  @objc final public let paymentCategory: Swift.String?
-  @objc final public let fromDate: Foundation.Date?
-  @objc final public let endDate: Foundation.Date?
-  @objc final public let documentNumber: Swift.String?
-  @objc final public let documentDate: Foundation.Date?
-  @objc final public let ultimateDebtor: Swift.String?
+  @available(*, unavailable, message: "Not used anymore")
+  @objc public var regulatoryReportType: Swift.String? {
+    @objc get
+  }
+  @available(*, unavailable, message: "Not used anymore")
+  @objc public var identifier: Swift.String? {
+    @objc get
+  }
+  @available(*, unavailable, message: "Not used anymore")
+  @objc public var identifierType: Swift.String? {
+    @objc get
+  }
+  @available(*, unavailable, message: "Not used anymore")
+  @objc public var paymentCategory: Swift.String? {
+    @objc get
+  }
+  @available(*, unavailable, message: "Not used anymore")
+  @objc public var fromDate: Foundation.Date? {
+    @objc get
+  }
+  @available(*, unavailable, message: "Not used anymore")
+  @objc public var endDate: Foundation.Date? {
+    @objc get
+  }
+  @available(*, unavailable, message: "Not used anymore")
+  @objc public var documentNumber: Swift.String? {
+    @objc get
+  }
+  @available(*, unavailable, message: "Not used anymore")
+  @objc public var documentDate: Foundation.Date? {
+    @objc get
+  }
+  @available(*, unavailable, message: "Not used anymore")
+  @objc public var ultimateDebtor: Swift.String? {
+    @objc get
+  }
   @objc public init(description: Swift.String, currency: Swift.String, publicHash: Swift.String, toIban: Swift.String, emailNotification: Swift.Bool, sum: Foundation.Decimal)
+  @available(*, unavailable, message: "Not used anymore. Please call the startBudgetPayment(country:hookHash:ibanHookHash:delegate:) IrisPayUI instance method.")
   @objc public init(description: Swift.String, currency: Swift.String, publicHash: Swift.String, toIban: Swift.String, emailNotification: Swift.Bool, sum: Foundation.Decimal, regulatoryReportType: Swift.String, identifier: Swift.String, identifierType: IPUIIdentifierType, paymentCategory: Swift.String, fromDate: Foundation.Date, endDate: Foundation.Date, documentNumber: Swift.String, documentDate: Foundation.Date, ultimateDebtor: Swift.String)
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
