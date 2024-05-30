@@ -1,5 +1,10 @@
 # Release notes
 
+## v1.23.0 (51)
+- Fixed a rarely-occurring problem with localization.
+- Removed a few properties from the `IPUIPayment` class.
+- The SDK is now code signed.
+
 ## v1.22.1 (50)
 - Fixed some buttons not having any text in some cases.
 - Fixed missing IBANs from dropdown fields.
