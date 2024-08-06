@@ -393,6 +393,85 @@ typedef SWIFT_ENUM(NSInteger, IPUIInterfaceStyle, open) {
 };
 
 @class NSString;
+enum IPUIIdentifierType : NSInteger;
+
+SWIFT_CLASS_NAMED("IPUIBudgetPayment")
+@interface IPUIBudgetPayment : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull paymentDescription;
+/// The currency in which the payment is to be made
+@property (nonatomic, readonly, copy) NSString * _Nonnull currency;
+/// Merchant’s hash.
+@property (nonatomic, readonly, copy) NSString * _Nonnull publicHash;
+/// The IBAN of the receiver.
+@property (nonatomic, readonly, copy) NSString * _Nonnull toIban;
+/// If you want to be notified by email.
+@property (nonatomic, readonly) BOOL emailNotification;
+/// The amount to be sent.
+@property (nonatomic, readonly) NSDecimal sum;
+/// Must provide EGN, EIK or PNF.
+@property (nonatomic, readonly, copy) NSString * _Nonnull identifier;
+/// An enum specifying the type of the identifier. Acceptable values: <code>"EGN"</code>, <code>"EIK"</code> or <code>"PNF"</code>.
+@property (nonatomic, readonly) enum IPUIIdentifierType identifierType;
+/// Liable person.
+@property (nonatomic, readonly, copy) NSString * _Nonnull ultimateDebtor;
+/// The init for budget payments.
+/// \param description A description of the payment
+///
+/// \param currency The currency in which the payment is to be made
+///
+/// \param publicHash Merchant’s hash.
+///
+/// \param toIban The IBAN of the receiver.
+///
+/// \param emailNotification If you want to be notified by email.
+///
+/// \param sum The amount to be sent.
+///
+/// \param identifier Must provide EGN, EIK or PNF.
+///
+/// \param identifierType An enum specifying the type of the identifier. Available values: EGN, EIK or PNF.
+///
+/// \param ultimateDebtor The name of the liable person.
+///
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency publicHash:(NSString * _Nonnull)publicHash toIban:(NSString * _Nonnull)toIban emailNotification:(BOOL)emailNotification sum:(NSDecimal)sum identifier:(NSString * _Nonnull)identifier identifierType:(enum IPUIIdentifierType)identifierType ultimateDebtor:(NSString * _Nonnull)ultimateDebtor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS_NAMED("IPUIPaymentWithBankAccount")
+@interface IPUIPaymentWithBankAccount : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull paymentDescription;
+/// The currency in which the payment is to be made
+@property (nonatomic, readonly, copy) NSString * _Nonnull currency;
+/// The name of the receiver.
+@property (nonatomic, readonly, copy) NSString * _Nonnull receiverName;
+/// The IBAN of the receiver.
+@property (nonatomic, readonly, copy) NSString * _Nonnull receiverIban;
+/// If you want to be notified by email.
+@property (nonatomic, readonly) BOOL emailNotification;
+/// The id of the bank account.
+@property (nonatomic, readonly) int64_t bankAccountId;
+/// The amount to be sent.
+@property (nonatomic, readonly) NSDecimal sum;
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency receiverName:(NSString * _Nonnull)receiverName receiverIban:(NSString * _Nonnull)receiverIban emailNotification:(BOOL)emailNotification bankAccountId:(int64_t)bankAccountId sum:(NSDecimal)sum OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS_NAMED("IPUIBudgetPaymentWithBankAccount")
+@interface IPUIBudgetPaymentWithBankAccount : IPUIPaymentWithBankAccount
+/// Must provide EGN, EIK or PNF.
+@property (nonatomic, readonly, copy) NSString * _Nonnull identifier;
+/// An enum specifying the type of the identifier. Available values: EGN, EIK or PNF.
+@property (nonatomic, readonly) enum IPUIIdentifierType identifierType;
+/// Liable person.
+@property (nonatomic, readonly, copy) NSString * _Nonnull ultimateDebtor;
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency receiverName:(NSString * _Nonnull)receiverName receiverIban:(NSString * _Nonnull)receiverIban emailNotification:(BOOL)emailNotification bankAccountId:(int64_t)bankAccountId sum:(NSDecimal)sum identifier:(NSString * _Nonnull)identifier identifierType:(enum IPUIIdentifierType)identifierType ultimateDebtor:(NSString * _Nonnull)ultimateDebtor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency receiverName:(NSString * _Nonnull)receiverName receiverIban:(NSString * _Nonnull)receiverIban emailNotification:(BOOL)emailNotification bankAccountId:(int64_t)bankAccountId sum:(NSDecimal)sum SWIFT_UNAVAILABLE;
+@end
+
 
 /// Methods you use to observe the state of the processes you initiated in IrisPayUI.
 /// Your delegate must be an instance of <code>UIViewController</code>.
@@ -439,7 +518,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, IPUILanguage, "IPUILanguage", open) {
 
 SWIFT_CLASS_NAMED("IPUIPayment")
 @interface IPUIPayment : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull desc;
+@property (nonatomic, readonly, copy) NSString * _Nonnull paymentDescription;
 /// The currency in which the payment is to be made
 @property (nonatomic, readonly, copy) NSString * _Nonnull currency;
 /// Merchant’s hash.
@@ -450,33 +529,18 @@ SWIFT_CLASS_NAMED("IPUIPayment")
 @property (nonatomic, readonly) BOOL emailNotification;
 /// The amount to be sent.
 @property (nonatomic, readonly) NSDecimal sum;
-/// Accepted values for regulatoryReportType are: “1”, “2”, “3”, “4”, “5”, “6”, “9”.
-/// 1 - Declaration, 2 - Inspection Act, 3 - Penalty Decree, 4 - advance payment, 5 - batch property number, 6 - enforced collection order, 9 - others.
-/// Payment category pattern: ^[0-9]{6}?$
-/// Example: 110000.
-/// Only needed for budget payments.
-@property (nonatomic, readonly, copy) NSString * _Nullable regulatoryReportType SWIFT_UNAVAILABLE_MSG("Not used anymore");
+@property (nonatomic, readonly, copy) NSString * _Nullable desc SWIFT_DEPRECATED_MSG("", "paymentDescription");
 /// Must provide EGN, EIK or PNF. Only needed for budget payments.
-@property (nonatomic, readonly, copy) NSString * _Nullable identifier SWIFT_UNAVAILABLE_MSG("Not used anymore");
+@property (nonatomic, readonly, copy) NSString * _Nullable identifier SWIFT_UNAVAILABLE_MSG("Did you mean to use IPUIBudgetPayment?");
 /// An enum specifying the type of the identifier. Available values: EGN, EIK or PNF. Only needed for budget payments.
-@property (nonatomic, readonly, copy) NSString * _Nullable identifierType SWIFT_UNAVAILABLE_MSG("Not used anymore");
-/// Only needed for budget payments.
-@property (nonatomic, readonly, copy) NSString * _Nullable paymentCategory SWIFT_UNAVAILABLE_MSG("Not used anymore");
-/// Only needed for budget payments.
-@property (nonatomic, readonly, copy) NSDate * _Nullable fromDate SWIFT_UNAVAILABLE_MSG("Not used anymore");
-/// Only needed for budget payments.
-@property (nonatomic, readonly, copy) NSDate * _Nullable endDate SWIFT_UNAVAILABLE_MSG("Not used anymore");
-/// Number of the document. Only needed for budget payments.
-@property (nonatomic, readonly, copy) NSString * _Nullable documentNumber SWIFT_UNAVAILABLE_MSG("Not used anymore");
-/// Date of the document. Only needed for budget payments.
-@property (nonatomic, readonly, copy) NSDate * _Nullable documentDate SWIFT_UNAVAILABLE_MSG("Not used anymore");
+@property (nonatomic, readonly, copy) NSString * _Nullable identifierType SWIFT_UNAVAILABLE_MSG("Did you mean to use IPUIBudgetPayment?");
 /// Liable person. Only needed for budget payments.
-@property (nonatomic, readonly, copy) NSString * _Nullable ultimateDebtor SWIFT_UNAVAILABLE_MSG("Not used anymore");
+@property (nonatomic, readonly, copy) NSString * _Nullable ultimateDebtor SWIFT_UNAVAILABLE_MSG("Did you mean to use IPUIBudgetPayment?");
 /// \param description A description of the payment
 ///
 /// \param currency The currency in which the payment is to be made
 ///
-/// \param publicHash Merchant’s hash.
+/// \param publicHash The merchant’s hash. Must not be empty, otherwise will throw an error.
 ///
 /// \param toIban The IBAN of the receiver.
 ///
@@ -484,7 +548,7 @@ SWIFT_CLASS_NAMED("IPUIPayment")
 ///
 /// \param sum The amount to be sent.
 ///
-- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency publicHash:(NSString * _Nonnull)publicHash toIban:(NSString * _Nonnull)toIban emailNotification:(BOOL)emailNotification sum:(NSDecimal)sum OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency publicHash:(NSString * _Nonnull)publicHash toIban:(NSString * _Nonnull)toIban emailNotification:(BOOL)emailNotification sum:(NSDecimal)sum error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 /// The init for budget payments.
 /// \param description A description of the payment
 ///
@@ -520,7 +584,7 @@ SWIFT_CLASS_NAMED("IPUIPayment")
 ///
 /// \param ultimateDebtor Liable person. Only needed for budget payments. Default value is <code>nil</code>.
 ///
-- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency publicHash:(NSString * _Nonnull)publicHash toIban:(NSString * _Nonnull)toIban emailNotification:(BOOL)emailNotification sum:(NSDecimal)sum regulatoryReportType:(NSString * _Nonnull)regulatoryReportType identifier:(NSString * _Nonnull)identifier identifierType:(enum IPUIIdentifierType)identifierType paymentCategory:(NSString * _Nonnull)paymentCategory fromDate:(NSDate * _Nonnull)fromDate endDate:(NSDate * _Nonnull)endDate documentNumber:(NSString * _Nonnull)documentNumber documentDate:(NSDate * _Nonnull)documentDate ultimateDebtor:(NSString * _Nonnull)ultimateDebtor OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE_MSG("Not used anymore. Please call the startBudgetPayment(country:hookHash:ibanHookHash:delegate:) IrisPayUI instance method.");
+- (nonnull instancetype)initWithDescription:(NSString * _Nonnull)description currency:(NSString * _Nonnull)currency publicHash:(NSString * _Nonnull)publicHash toIban:(NSString * _Nonnull)toIban emailNotification:(BOOL)emailNotification sum:(NSDecimal)sum regulatoryReportType:(NSString * _Nonnull)regulatoryReportType identifier:(NSString * _Nonnull)identifier identifierType:(enum IPUIIdentifierType)identifierType paymentCategory:(NSString * _Nonnull)paymentCategory fromDate:(NSDate * _Nonnull)fromDate endDate:(NSDate * _Nonnull)endDate documentNumber:(NSString * _Nonnull)documentNumber documentDate:(NSDate * _Nonnull)documentDate ultimateDebtor:(NSString * _Nonnull)ultimateDebtor OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE_MSG("Not used anymore. Please call the IrisPayUI.startBudgetPayment(country:hookHash:ibanHookHash:delegate:) instance method.");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -542,6 +606,7 @@ SWIFT_PROTOCOL_NAMED("IPUIPaymentDelegate")
 - (void)paymentCompletedWithResult:(NSString * _Nullable)result;
 @end
 
+
 typedef SWIFT_ENUM_NAMED(NSInteger, IPUISupportedCountry, "IPUISupportedCountry", open) {
   IPUISupportedCountryAll = 0,
   IPUISupportedCountryBulgaria = 1,
@@ -558,7 +623,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 + (IPUIAppearance * _Nonnull)appearance SWIFT_WARN_UNUSED_RESULT;
 + (void)setAppearance:(IPUIAppearance * _Nonnull)value;
 /// Initializes an IrisPayUI instance.
-/// If you don’t supply an appearance object, the default appearance will be used.
+/// If you don’t pass an appearance object, the default appearance will be used.
 /// \param irisHash The hash used to authenticate the Iris Pay user.
 ///
 /// \param environment An enum specifying the environment which you’d like to use.
@@ -571,33 +636,65 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 ///
 - (nonnull instancetype)initWithIrisHash:(NSString * _Nonnull)irisHash environment:(enum IPUIEnvironment)environment irisInstanceURL:(NSURL * _Nullable)irisInstanceURL appearance:(IPUIAppearance * _Nonnull)appearance language:(enum IPUILanguage)language OBJC_DESIGNATED_INITIALIZER;
 - (void)setUserHash:(NSString * _Nonnull)hash;
-/// Starts the login flow.
-- (void)startLoginWithDelegate:(id <IPUIDelegate> _Nonnull)delegate;
 /// Starts the flow for adding the user’s IBAN(s).
-/// If you have the hash of a concrete bank you can supply it and the SDK will open the form for adding an IBAN for that bank.
-/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
+/// If you have the hash of a concrete bank you can provide it and the SDK will open the form for adding an IBAN for that bank.
+/// If you have a webhook hash you can provide it, so your webhook will be notified when the process finishes.
 /// \param bankHash The hash of a bank you wish to add an account from. Default value is <code>nil</code>. This parameter is optional.
 ///
 /// \param country If provided only banks from that country will be shown. If you have passed a <code>bankHash</code> this parameter is ignored. Default value is <code>.all</code>. This parameter is optional.
 ///
-/// \param webhookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+/// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///
-- (void)addIBANWithBankHash:(NSString * _Nullable)bankHash country:(enum IPUISupportedCountry)country webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIIbanDelegate> _Nonnull)delegate;
-/// Opens the callback URL which a banking app (e.g. Revolut) is instructed to open after the user has finished authorising their actions in said app.
-/// \param url The URL coming from the banking app.
-///
-- (void)openRedirectedURL:(NSURL * _Nonnull)url;
-/// Starts the payment flow without having to obtain consent from the bank.
-/// \param paymentModel The payment model object.
-///
+- (void)createAddIBANWithBankHash:(NSString * _Nullable)bankHash country:(enum IPUISupportedCountry)country hookHash:(NSString * _Nullable)hookHash delegate:(id <IPUIIbanDelegate> _Nonnull)delegate;
+/// Starts a domestic / SEPA payment flow.
+/// If you have a webhook hash you can provide it, so your webhook will be notified when the process finishes.
 /// \param country If provided only banks from that country will be shown. Default value is <code>.all</code>. This parameter is optional.
 ///
-/// \param hookHash Default value is <code>nil</code>. This parameter is optional.
+/// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///
 /// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
 ///
-- (void)startPaymentWithoutConsentWithPaymentModel:(IPUIPayment * _Nonnull)paymentModel country:(enum IPUISupportedCountry)country hookHash:(NSString * _Nullable)hookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIDelegate> _Nonnull)delegate;
-/// Starts the payment flow by using payment hash generated through Pay by Click
+- (void)createPaymentWithCountry:(enum IPUISupportedCountry)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
+/// Starts a budget payment flow.
+/// ⚠️ <em><em>For Bulgarian budget payments only!</em></em> ⚠️
+/// If you have a webhook hash you can provide it, so your webhook will be notified when the process finishes.
+/// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)createBudgetPaymentWithHookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
+/// Starts a payment flow where you can provide a UUID for a specific payment. Can be used for refunds.
+/// \param code The UUID.
+///
+- (void)createPayWithCode:(NSString * _Nonnull)code delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
+/// Starts the payment flow without having to obtain consent from the bank.
+/// If you have a webhook hash you can provide it, so your webhook will be notified when the process finishes.
+/// \param paymentData The payment model object.
+///
+/// \param country If provided only banks from that country will be shown. Default value is <code>.all</code>. This parameter is optional.
+///
+/// \param bankHashes An array of bank hashes of the banks you’d want to show in the list. Default is an empty array. This parameter is optional.
+///
+/// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)createPayWithPaymentData:(IPUIPayment * _Nonnull)paymentData country:(enum IPUISupportedCountry)country bankHashes:(NSArray<NSString *> * _Nonnull)bankHashes hookHash:(NSString * _Nullable)hookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIDelegate> _Nonnull)delegate;
+/// Starts the budget payment flow without having to obtain consent from the bank.
+/// ⚠️ <em><em>For Bulgarian budget payments only!</em></em> ⚠️
+/// If you have a webhook hash you can provide it, so your webhook will be notified when the process finishes.
+/// \param budgetPaymentData The payment model object.
+///
+/// \param country If provided only banks from that country will be shown. Default value is <code>.all</code>. This parameter is optional.
+///
+/// \param bankHashes An array of bank hashes of the banks you’d want to show in the list. Default is an empty array. This parameter is optional.
+///
+/// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
+///
+/// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
+///
+- (void)createBudgetPayWithPaymentData:(IPUIBudgetPayment * _Nonnull)budgetPaymentData bankHashes:(NSArray<NSString *> * _Nonnull)bankHashes hookHash:(NSString * _Nullable)hookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIDelegate> _Nonnull)delegate;
+/// Starts the payment flow by using payment hash generated through Pay by Click. Can be used for both normal and budget payments.
 /// <ul>
 ///   <li>
 ///     Parameters:
@@ -607,35 +704,33 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 ///   </li>
 /// </ul>
 - (void)payByClickWithPaymentHash:(NSString * _Nonnull)paymentHash delegate:(id <IPUIDelegate> _Nonnull)delegate;
-/// Starts a domestic / SEPA payment flow.
-/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
-/// \param country If provided only banks from that country will be shown. Default value is <code>.all</code>. This parameter is optional.
+/// Starts the payment flow with a preselected bank account and recipient in the <code>paymentData</code> object.
+/// If you have a webhook hash you can provide it, so your webhook will be notified when the process finishes.
+/// \param paymentData The payment model object.
 ///
 /// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///
-/// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
-///
-- (void)startDomesticOrSEPAPaymentWithCountry:(enum IPUISupportedCountry)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
-/// Starts a budget payment flow.
-/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
-/// \param country If provided only banks from that country will be shown. Default value is <code>.all</code>. This parameter is optional.
+- (void)createPayWithBankAccIdWithoutFormWithPaymentData:(IPUIPaymentWithBankAccount * _Nonnull)paymentData hookHash:(NSString * _Nullable)hookHash delegate:(id <IPUIDelegate> _Nonnull)delegate;
+/// Starts the budget payment flow with a preselected bank account and recipient in the <code>paymentData</code> object.
+/// ⚠️ <em><em>For Bulgarian budget payments only!</em></em> ⚠️
+/// If you have a webhook hash you can provide it, so your webhook will be notified when the process finishes.
+/// \param budgetPaymentData The budget payment model object.
 ///
 /// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///
-/// \param ibanHookHash Default value is <code>nil</code>. This parameter is optional.
+- (void)createBudgetPayWithBankAccIdWithoutFormWithBudgetPaymentData:(IPUIBudgetPaymentWithBankAccount * _Nonnull)budgetPaymentData hookHash:(NSString * _Nullable)hookHash delegate:(id <IPUIDelegate> _Nonnull)delegate;
+/// Opens the callback URL which a banking app (e.g. Revolut) is instructed to open after the user has finished authorising their actions in said app.
+/// \param url The URL coming from the banking app.
 ///
-- (void)startBudgetPaymentWithCountry:(enum IPUISupportedCountry)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
-/// Starts a payment flow where you can supply a UUID for a specific payment. Can be used for refunds.
-/// \param code The UUID.
-///
-- (void)paymentWithCode:(NSString * _Nonnull)code delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate;
-/// Confirms the created payment.
-/// If you have a webhook hash you can supply it, so your webhook will be notified when the process finishes.
-/// \param code The six-digit confirmation codе.
-///
-/// \param webhookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
-///
-- (void)confirmPaymentWithCode:(NSString * _Nonnull)code webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate SWIFT_DEPRECATED_MSG("This method should not be used anymore and may not work correctly.", "paymentWithCode:delegate:");
+- (void)openRedirectedURL:(NSURL * _Nonnull)url;
+- (void)startLoginWithDelegate:(id <IPUIDelegate> _Nonnull)delegate SWIFT_UNAVAILABLE_MSG("This method has been removed.");
+- (void)addIBANWithBankHash:(NSString * _Nullable)bankHash country:(enum IPUISupportedCountry)country webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIIbanDelegate> _Nonnull)delegate SWIFT_UNAVAILABLE_MSG("'addIBAN' has been renamed to 'createAddIBANWithBankHash:country:hookHash:delegate:'");
+- (void)startDomesticOrSEPAPaymentWithCountry:(enum IPUISupportedCountry)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate SWIFT_UNAVAILABLE_MSG("'startDomesticOrSEPAPayment' has been renamed to 'createPaymentWithCountry:hookHash:ibanHookHash:delegate:'");
+- (void)startBudgetPaymentWithCountry:(enum IPUISupportedCountry)country hookHash:(NSString * _Nullable)webhookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate SWIFT_UNAVAILABLE_MSG("'startBudgetPayment' has been renamed to 'createBudgetPaymentWithHookHash:ibanHookHash:delegate:'");
+- (void)confirmPaymentWithCode:(NSString * _Nonnull)code webhookHash:(NSString * _Nullable)webhookHash delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate SWIFT_UNAVAILABLE_MSG("'confirmPayment' has been renamed to 'createPayWithCode:delegate:'");
+- (void)paymentWithCode:(NSString * _Nonnull)code delegate:(id <IPUIPaymentDelegate> _Nonnull)delegate SWIFT_UNAVAILABLE_MSG("'paymentWithCode' has been renamed to 'createPayWithCode:delegate:'");
+- (void)startPaymentWithoutConsentWithPaymentModel:(IPUIPayment * _Nonnull)paymentModel country:(enum IPUISupportedCountry)country hookHash:(NSString * _Nullable)hookHash ibanHookHash:(NSString * _Nullable)ibanHookHash delegate:(id <IPUIDelegate> _Nonnull)delegate SWIFT_UNAVAILABLE_MSG("'startPaymentWithoutConsent' has been renamed to 'createPayWithPaymentData(_:country:hookHash:ibanHookHash:delegate:)'");
+- (void)startPaymentWithIBAN:(NSString * _Nullable)iban delegate:(id <IPUIDelegate> _Nonnull)delegate SWIFT_UNAVAILABLE_MSG("'startPayment' has been renamed to 'createPaymentWithCountry:hookHash:ibanHookHash:delegate:': This method should not be used anymore and may not work correctly.");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

@@ -8,7 +8,7 @@ Once you have your Swift package set up, adding IrisPayUI as a dependency is as 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/infinno/IrisPayUI.git", .upToNextMajor(from: "1.23.0"))
+    .package(url: "https://github.com/infinno/IrisPayUI.git", .upToNextMajor(from: "2.0.0"))
 ]
 ```
 
@@ -57,6 +57,9 @@ func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
 }
 ```
 The IrisPayUI SDK must open this URL or the process won't ever complete.
+
+## Migration from 1.x to 2.0.0+
+Xcode should provide FIXITs which should rename the old methods to their new names. If you need any help, please contact us.
 
 ## Requirements
 - iOS 11+

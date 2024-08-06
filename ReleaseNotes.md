@@ -1,5 +1,12 @@
 # Release notes
 
+## v2.0.0 (55)
+- Refactored the method signatures to better match the SDKs on other platforms.
+- Added methods to start ordinary and budget payments with preselected recipient(s):
+	- `createPayWithBankAccIdWithoutForm(paymentData:hookHash:delegate:)`
+	- `createBudgetPayWithBankAccIdWithoutForm(budgetPaymentData:hookHash:delegate:)`.
+- Bugfixes.
+
 ## v1.23.0 (51)
 - Fixed a rarely-occurring problem with localization.
 - Removed a few properties from the `IPUIPayment` class.
