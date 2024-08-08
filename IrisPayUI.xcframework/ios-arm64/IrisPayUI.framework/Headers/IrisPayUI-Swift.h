@@ -641,14 +641,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 /// If you have a webhook hash you can provide it, so your webhook will be notified when the process finishes.
 /// \param bankHash The hash of a bank you wish to add an account from. Default value is <code>nil</code>. This parameter is optional.
 ///
-/// \param country If provided only banks from that country will be shown. If you have passed a <code>bankHash</code> this parameter is ignored. Default value is <code>.all</code>. This parameter is optional.
+/// \param country If provided only banks from that country will be shown. If you have passed a <code>bankHash</code> this parameter is ignored. Default value is <code>.all</code>.
 ///
 /// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///
 - (void)createAddIBANWithBankHash:(NSString * _Nullable)bankHash country:(enum IPUISupportedCountry)country hookHash:(NSString * _Nullable)hookHash delegate:(id <IPUIIbanDelegate> _Nonnull)delegate;
 /// Starts a domestic / SEPA payment flow.
 /// If you have a webhook hash you can provide it, so your webhook will be notified when the process finishes.
-/// \param country If provided only banks from that country will be shown. Default value is <code>.all</code>. This parameter is optional.
+/// \param country If provided only banks from that country will be shown. Default value is <code>.all</code>.
 ///
 /// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///
@@ -671,9 +671,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 /// If you have a webhook hash you can provide it, so your webhook will be notified when the process finishes.
 /// \param paymentData The payment model object.
 ///
-/// \param country If provided only banks from that country will be shown. Default value is <code>.all</code>. This parameter is optional.
+/// \param country If provided only banks from that country will be shown. Default value is <code>.all</code>.
 ///
-/// \param bankHashes An array of bank hashes of the banks you’d want to show in the list. Default is an empty array. This parameter is optional.
+/// \param bankHashes An array of bank hashes of the banks you’d want to show in the list. Default is an empty array.
 ///
 /// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///
@@ -685,9 +685,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) IPUIAppearance * _Nonn
 /// If you have a webhook hash you can provide it, so your webhook will be notified when the process finishes.
 /// \param budgetPaymentData The payment model object.
 ///
-/// \param country If provided only banks from that country will be shown. Default value is <code>.all</code>. This parameter is optional.
+/// \param country If provided only banks from that country will be shown. Default value is <code>.all</code>.
 ///
-/// \param bankHashes An array of bank hashes of the banks you’d want to show in the list. Default is an empty array. This parameter is optional.
+/// \param bankHashes An array of bank hashes of the banks you’d want to show in the list. Default is an empty array.
 ///
 /// \param hookHash The hash for your webhook. Default value is <code>nil</code>. This parameter is optional.
 ///

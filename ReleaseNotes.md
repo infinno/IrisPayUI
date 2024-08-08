@@ -1,5 +1,8 @@
 # Release notes
 
+## v2.0.1 (56)
+- Documentation fixes.
+
 ## v2.0.0 (55)
 - Refactored the method signatures to better match the SDKs on other platforms.
 - Added methods to start ordinary and budget payments with preselected recipient(s):
