@@ -23,7 +23,7 @@ dependencies: [
 ]
 ```
 
-### Manual
+### Manually
 
 1. Copy `IrisPayUI.xcframework` to your project’s folder. 
 2. In the Project Navigator click on the project file and then click on the target you want to use `IrisPayUI` in.
