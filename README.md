@@ -1,3 +1,14 @@
+# IrisPayUI
+
+[![Platforms](https://img.shields.io/badge/Platforms-iOS-yellowgreen?style=flat)](https://img.shields.io/badge/Platforms-iOS-Green?style=flat)
+[![Swift](https://img.shields.io/badge/Swift-5.10-orange?style=flat)](https://img.shields.io/badge/Swift-5.10-Orange?style=flat)
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat)
+
+## Requirements
+| Platform | Minimum Swift Version | Installation |
+| --- | --- | --- |
+| iOS 11.0+ | 5.10 | [Swift Package Manager](#swift-package-manager), [Manual](#manually) |
+
 ## Installation
 
 ### Swift Package Manager
