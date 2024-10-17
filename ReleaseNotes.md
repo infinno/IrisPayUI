@@ -1,5 +1,8 @@
 # Release notes
 
+## v2.1.0 (58)
+- Added a method called `createPayWithBankAccount(hookHash:delegate:)` which shows a form with a picker for the sender’s IBANs.
+
 ## v2.0.1 (56)
 - Documentation fixes.
 
