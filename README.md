@@ -71,6 +71,3 @@ The IrisPayUI SDK must open this URL or the process won't ever complete.
 
 ## Migration from 1.x to 2.0.0+
 Xcode should provide FIXITs which should rename the old methods to their new names. If you need any help, please contact us.
-
-## Requirements
-- iOS 11+
