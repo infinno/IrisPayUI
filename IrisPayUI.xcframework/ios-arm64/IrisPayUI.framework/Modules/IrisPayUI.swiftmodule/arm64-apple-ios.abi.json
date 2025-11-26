@@ -486,6 +486,88 @@
           },
           {
             "kind": "Var",
+            "name": "croatia",
+            "printedName": "croatia",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrisPayUI.IPUISupportedCountry.Type) -> IrisPayUI.IPUISupportedCountry",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IPUISupportedCountry",
+                    "printedName": "IrisPayUI.IPUISupportedCountry",
+                    "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrisPayUI.IPUISupportedCountry.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IPUISupportedCountry",
+                        "printedName": "IrisPayUI.IPUISupportedCountry",
+                        "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry@IPUISupportedCountryCroatia",
+            "mangledName": "$s9IrisPayUI20IPUISupportedCountryO7croatiayA2CmF",
+            "moduleName": "IrisPayUI",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "cyprus",
+            "printedName": "cyprus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrisPayUI.IPUISupportedCountry.Type) -> IrisPayUI.IPUISupportedCountry",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IPUISupportedCountry",
+                    "printedName": "IrisPayUI.IPUISupportedCountry",
+                    "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrisPayUI.IPUISupportedCountry.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IPUISupportedCountry",
+                        "printedName": "IrisPayUI.IPUISupportedCountry",
+                        "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry@IPUISupportedCountryCyprus",
+            "mangledName": "$s9IrisPayUI20IPUISupportedCountryO6cyprusyA2CmF",
+            "moduleName": "IrisPayUI",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
             "name": "greece",
             "printedName": "greece",
             "children": [
@@ -523,7 +605,48 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "italy",
+            "printedName": "italy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(IrisPayUI.IPUISupportedCountry.Type) -> IrisPayUI.IPUISupportedCountry",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IPUISupportedCountry",
+                    "printedName": "IrisPayUI.IPUISupportedCountry",
+                    "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "IrisPayUI.IPUISupportedCountry.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IPUISupportedCountry",
+                        "printedName": "IrisPayUI.IPUISupportedCountry",
+                        "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry@IPUISupportedCountryItaly",
+            "mangledName": "$s9IrisPayUI20IPUISupportedCountryO5italyyA2CmF",
+            "moduleName": "IrisPayUI",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -564,48 +687,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 3
-          },
-          {
-            "kind": "Var",
-            "name": "slovakia",
-            "printedName": "slovakia",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(IrisPayUI.IPUISupportedCountry.Type) -> IrisPayUI.IPUISupportedCountry",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "IPUISupportedCountry",
-                    "printedName": "IrisPayUI.IPUISupportedCountry",
-                    "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "IrisPayUI.IPUISupportedCountry.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "IPUISupportedCountry",
-                        "printedName": "IrisPayUI.IPUISupportedCountry",
-                        "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@IrisPayUI@E@IPUISupportedCountry@IPUISupportedCountrySlovakia",
-            "mangledName": "$s9IrisPayUI20IPUISupportedCountryO8slovakiayA2CmF",
-            "moduleName": "IrisPayUI",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Constructor",
@@ -9912,882 +9994,896 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUILanguage.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUILanguage.swift",
       "kind": "IntegerLiteral",
       "offset": 293,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUINetwork.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUINetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 844,
+      "offset": 897,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUINetwork.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUINetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 2758,
+      "offset": 2811,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUINetwork.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUINetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 5737,
+      "offset": 5790,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIResponse.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIResponse.swift",
       "kind": "StringLiteral",
       "offset": 493,
       "length": 10,
       "value": "\"lastStep\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUISupportedCountry.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUISupportedCountry.swift",
       "kind": "IntegerLiteral",
       "offset": 272,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUISupportedCountry.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUISupportedCountry.swift",
       "kind": "IntegerLiteral",
       "offset": 287,
-      "length": 6,
+      "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUISupportedCountry.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUISupportedCountry.swift",
       "kind": "IntegerLiteral",
-      "offset": 300,
-      "length": 7,
+      "offset": 301,
+      "length": 6,
       "value": "3"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUISupportedCountry.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUISupportedCountry.swift",
       "kind": "IntegerLiteral",
       "offset": 314,
-      "length": 8,
+      "length": 6,
       "value": "4"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUISupportedCountry.swift",
+      "kind": "IntegerLiteral",
+      "offset": 327,
+      "length": 5,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUISupportedCountry.swift",
+      "kind": "IntegerLiteral",
+      "offset": 339,
+      "length": 7,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "FloatLiteral",
       "offset": 1849,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1938,
       "length": 12,
       "value": "\"0123456789\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2016,
       "length": 3,
       "value": "\"A\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2022,
       "length": 3,
       "value": "\"Z\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2091,
       "length": 3,
       "value": "\"a\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2097,
       "length": 3,
       "value": "\"z\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2265,
       "length": 22,
       "value": "\"eu.infinno.IrisPayUI\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2362,
       "length": 14,
       "value": "\"CFBundleName\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2460,
       "length": 20,
       "value": "\"CFBundleIdentifier\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2565,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2676,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2788,
       "length": 20,
       "value": "\"CFBundleIdentifier\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2900,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3018,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3200,
       "length": 23,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3211,
       "length": 1,
       "value": "\" (\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3221,
       "length": 1,
       "value": "\")\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3267,
       "length": 35,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3284,
       "length": 1,
       "value": "\" (\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Constants.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3300,
       "length": 1,
       "value": "\")\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/IPUIIrisPayUI.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/IPUIIrisPayUI.swift",
       "kind": "StringLiteral",
       "offset": 352,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/IPUIIrisPayUI.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/IPUIIrisPayUI.swift",
       "kind": "Array",
       "offset": 8901,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/IPUIIrisPayUI.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/IPUIIrisPayUI.swift",
       "kind": "Array",
       "offset": 10217,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIListItem.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIListItem.swift",
       "kind": "StringLiteral",
-      "offset": 481,
+      "offset": 507,
       "length": 10,
       "value": "\"imageUrl\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIListItem.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIListItem.swift",
       "kind": "StringLiteral",
-      "offset": 514,
+      "offset": 540,
       "length": 14,
       "value": "\"imageDarkUrl\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUILabel.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUILabel.swift",
       "kind": "StringLiteral",
       "offset": 295,
       "length": 5,
       "value": "\"lbl\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUILabel.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUILabel.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 9,
       "value": "\"lblCode\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIPaymentWithBankAccount.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIPaymentWithBankAccount.swift",
       "kind": "StringLiteral",
       "offset": 1260,
       "length": 13,
       "value": "\"description\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/Other\/Server400Error.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/Other\/Server400Error.swift",
       "kind": "StringLiteral",
       "offset": 330,
       "length": 9,
       "value": "\"message\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/AnimationDuration.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/AnimationDuration.swift",
       "kind": "FloatLiteral",
       "offset": 265,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/AnimationDuration.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/AnimationDuration.swift",
       "kind": "FloatLiteral",
       "offset": 330,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/AnimationDuration.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/AnimationDuration.swift",
       "kind": "FloatLiteral",
       "offset": 397,
       "length": 4,
       "value": "0.25"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/AnimationDuration.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/AnimationDuration.swift",
       "kind": "FloatLiteral",
       "offset": 460,
       "length": 3,
       "value": "0.4"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/AnimationDuration.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/AnimationDuration.swift",
       "kind": "FloatLiteral",
       "offset": 524,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 281,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 356,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 362,
       "length": 11,
       "value": "2"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 879,
       "length": 8,
       "value": "0x007aff"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 1817,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 4039,
       "length": 2,
       "value": "44"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 4204,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 4543,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 5432,
       "length": 8,
       "value": "0x050505"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 5480,
       "length": 8,
       "value": "0xF9F9F9"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 5535,
       "length": 8,
       "value": "0xF9F9F9"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 5739,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 6949,
       "length": 8,
       "value": "0x3C3C43"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "FloatLiteral",
       "offset": 6978,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 7293,
       "length": 8,
       "value": "0xC7C7CC"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 7824,
       "length": 2,
       "value": "36"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "IntegerLiteral",
       "offset": 7953,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIAppearance.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIAppearance.swift",
       "kind": "BooleanLiteral",
       "offset": 9900,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIFormController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIFormController.swift",
       "kind": "Array",
       "offset": 470,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIFormController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIFormController.swift",
       "kind": "BooleanLiteral",
       "offset": 692,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIRootController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIRootController.swift",
       "kind": "BooleanLiteral",
       "offset": 444,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Views\/IPUIListCell.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Views\/IPUIListCell.swift",
       "kind": "BooleanLiteral",
       "offset": 684,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
       "kind": "StringLiteral",
       "offset": 223,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
       "kind": "StringLiteral",
       "offset": 240,
       "length": 7,
       "value": "\"INPUT\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
       "kind": "StringLiteral",
       "offset": 265,
       "length": 10,
       "value": "\"TEXTAREA\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
       "kind": "StringLiteral",
       "offset": 293,
       "length": 18,
       "value": "\"GENERIC_DROPDOWN\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
       "kind": "StringLiteral",
       "offset": 333,
       "length": 10,
       "value": "\"DROPDOWN\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
       "kind": "StringLiteral",
       "offset": 359,
       "length": 8,
       "value": "\"HIDDEN\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 6,
       "value": "\"IBAN\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
       "kind": "StringLiteral",
       "offset": 405,
       "length": 10,
       "value": "\"PASSWORD\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
       "kind": "StringLiteral",
       "offset": 430,
       "length": 7,
       "value": "\"LABEL\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
       "kind": "StringLiteral",
       "offset": 451,
       "length": 6,
       "value": "\"DATE\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIFormField.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIFormField.swift",
       "kind": "BooleanLiteral",
       "offset": 256,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIInput.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInput.swift",
       "kind": "StringLiteral",
       "offset": 438,
       "length": 10,
       "value": "\"required\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/ImageCache.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/ImageCache.swift",
       "kind": "IntegerLiteral",
       "offset": 967,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/ImageCache.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/ImageCache.swift",
       "kind": "IntegerLiteral",
       "offset": 985,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/ImageCache.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/ImageCache.swift",
       "kind": "IntegerLiteral",
       "offset": 992,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/ImageCache.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/ImageCache.swift",
       "kind": "IntegerLiteral",
       "offset": 999,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUIAPIPath.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUIAPIPath.swift",
       "kind": "StringLiteral",
       "offset": 258,
       "length": 11,
       "value": "\"iban\/bank\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIListController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIListController.swift",
       "kind": "StringLiteral",
       "offset": 203,
       "length": 14,
       "value": "\"IPUIListCell\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIListController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIListController.swift",
       "kind": "Array",
       "offset": 331,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIListController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIListController.swift",
       "kind": "Array",
       "offset": 666,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIListController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIListController.swift",
       "kind": "BooleanLiteral",
       "offset": 815,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIListController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIListController.swift",
       "kind": "Array",
       "offset": 884,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Extensions.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Extensions.swift",
       "kind": "IntegerLiteral",
       "offset": 3829,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Extensions.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Extensions.swift",
       "kind": "FloatLiteral",
       "offset": 4027,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Extensions.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Extensions.swift",
       "kind": "IntegerLiteral",
       "offset": 4045,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Extensions.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Extensions.swift",
       "kind": "FloatLiteral",
       "offset": 4061,
       "length": 4,
       "value": "-3.0"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Extensions.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Extensions.swift",
       "kind": "IntegerLiteral",
       "offset": 4083,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Extensions.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Extensions.swift",
       "kind": "IntegerLiteral",
       "offset": 4104,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Extensions.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Extensions.swift",
       "kind": "BooleanLiteral",
       "offset": 6665,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Extensions.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Extensions.swift",
       "kind": "StringLiteral",
       "offset": 12489,
       "length": 23,
       "value": "\"common.buttons.cancel\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Helpers\/Extensions.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Helpers\/Extensions.swift",
       "kind": "StringLiteral",
       "offset": 13171,
       "length": 22,
       "value": "\"errors.generic.title\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUILastStepController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUILastStepController.swift",
       "kind": "BooleanLiteral",
       "offset": 659,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIDropdownController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIDropdownController.swift",
       "kind": "StringLiteral",
       "offset": 210,
       "length": 13,
       "value": "\"CountryCell\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIDropdownController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIDropdownController.swift",
       "kind": "IntegerLiteral",
       "offset": 427,
       "length": 3,
       "value": "250"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIDropdownController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIDropdownController.swift",
       "kind": "IntegerLiteral",
       "offset": 468,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIDropdownController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIDropdownController.swift",
       "kind": "IntegerLiteral",
       "offset": 505,
       "length": 2,
       "value": "42"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Controllers\/IPUIDropdownController.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIDropdownController.swift",
       "kind": "IntegerLiteral",
       "offset": 541,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIAction.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIAction.swift",
       "kind": "StringLiteral",
       "offset": 383,
       "length": 10,
       "value": "\"startUrl\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Models\/UI\/IPUIAction.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIAction.swift",
       "kind": "StringLiteral",
       "offset": 410,
       "length": 8,
       "value": "\"endUrl\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIEnvironment.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIEnvironment.swift",
       "kind": "IntegerLiteral",
       "offset": 430,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 218,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 236,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 255,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 277,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 299,
       "length": 6,
       "value": "\"HEAD\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 322,
       "length": 9,
       "value": "\"OPTIONS\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 346,
       "length": 7,
       "value": "\"TRACE\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Network\/IPUIHTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 370,
       "length": 9,
       "value": "\"CONNECT\""
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIIdentifierType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIIdentifierType.swift",
       "kind": "IntegerLiteral",
       "offset": 266,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/dev\/iOS\/IrisPayUI-ios\/IrisPayUI\/Classes\/IPUIIdentifierType.swift",
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIIdentifierType.swift",
       "kind": "IntegerLiteral",
       "offset": 276,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mladen\/Library\/Developer\/Xcode\/DerivedData\/IrisPayUI-hkbkzumvcbxrevhbxdjiturnvgzw\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 738,
       "length": 15,
       "value": "\"flag-bulgaria\""
     },
     {
-      "filePath": "\/Users\/mladen\/Library\/Developer\/Xcode\/DerivedData\/IrisPayUI-hkbkzumvcbxrevhbxdjiturnvgzw\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 886,
       "length": 14,
       "value": "\"flag-croatia\""
     },
     {
-      "filePath": "\/Users\/mladen\/Library\/Developer\/Xcode\/DerivedData\/IrisPayUI-hkbkzumvcbxrevhbxdjiturnvgzw\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1031,
       "length": 13,
       "value": "\"flag-cyprus\""
     },
     {
-      "filePath": "\/Users\/mladen\/Library\/Developer\/Xcode\/DerivedData\/IrisPayUI-hkbkzumvcbxrevhbxdjiturnvgzw\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1175,
       "length": 13,
       "value": "\"flag-greece\""
     },
     {
-      "filePath": "\/Users\/mladen\/Library\/Developer\/Xcode\/DerivedData\/IrisPayUI-hkbkzumvcbxrevhbxdjiturnvgzw\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1321,
       "length": 14,
       "value": "\"flag-romania\""
     },
     {
-      "filePath": "\/Users\/mladen\/Library\/Developer\/Xcode\/DerivedData\/IrisPayUI-hkbkzumvcbxrevhbxdjiturnvgzw\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1470,
       "length": 15,
       "value": "\"flag-slovakia\""
     },
     {
-      "filePath": "\/Users\/mladen\/Library\/Developer\/Xcode\/DerivedData\/IrisPayUI-hkbkzumvcbxrevhbxdjiturnvgzw\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1624,
       "length": 17,
       "value": "\"green-checkmark\""
     },
     {
-      "filePath": "\/Users\/mladen\/Library\/Developer\/Xcode\/DerivedData\/IrisPayUI-hkbkzumvcbxrevhbxdjiturnvgzw\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1768,
       "length": 11,
       "value": "\"red-xmark\""
     },
     {
-      "filePath": "\/Users\/mladen\/Library\/Developer\/Xcode\/DerivedData\/IrisPayUI-hkbkzumvcbxrevhbxdjiturnvgzw\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1905,
       "length": 10,
       "value": "\"calendar\""
     },
     {
-      "filePath": "\/Users\/mladen\/Library\/Developer\/Xcode\/DerivedData\/IrisPayUI-hkbkzumvcbxrevhbxdjiturnvgzw\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2041,
       "length": 10,
       "value": "\"dropdown\""
     },
     {
-      "filePath": "\/Users\/mladen\/Library\/Developer\/Xcode\/DerivedData\/IrisPayUI-hkbkzumvcbxrevhbxdjiturnvgzw\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphoneos\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2171,
       "length": 7,
