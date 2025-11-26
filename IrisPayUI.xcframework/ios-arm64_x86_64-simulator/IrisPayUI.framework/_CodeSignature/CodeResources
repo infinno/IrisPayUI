@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VNOuAagAUp5w1aXdOQWokF5OzpY=
+		uujVSHwPQRKlB/mxnF6+SQHreLQ=
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		X6OKxmIdnJtpSKRYGev44b8/PE4=
+		KWwtIsc9zojw0qK7ZQ53srr7InA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -149,7 +149,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UcaAMaa3GYjHPqZuT0q4E3dfsorSQeXZgFGfTvYZVsg=
+			wYcUke7j8HKwdY6CBLgy+5uv6RgON/IQUpDso2SCTKQ=
 			</data>
 		</dict>
 		<key>Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -184,7 +184,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dhc89zPZqZm7HGqTEhSF0SY3u98wNbTtPgkn1oEitTY=
+			PyOo9iCQzyNfEn/SUhzJVX1TJ0s4ZNpuIydwZusMXt0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
