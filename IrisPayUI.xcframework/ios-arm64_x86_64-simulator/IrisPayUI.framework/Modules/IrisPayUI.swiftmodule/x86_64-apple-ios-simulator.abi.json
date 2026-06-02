@@ -6566,6 +6566,26 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "IrisPayUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "IrisPayUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
@@ -10451,14 +10471,14 @@
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIFormController.swift",
       "kind": "Array",
-      "offset": 470,
+      "offset": 469,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Controllers\/IPUIFormController.swift",
       "kind": "BooleanLiteral",
-      "offset": 692,
+      "offset": 691,
       "length": 5,
       "value": "false"
     },
@@ -10547,11 +10567,39 @@
       "value": "\"DATE\""
     },
     {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInputType.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
+      "length": 10,
+      "value": "\"CHECKBOX\""
+    },
+    {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUIFormField.swift",
       "kind": "BooleanLiteral",
-      "offset": 256,
+      "offset": 270,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUICheckboxField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 270,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUICheckboxField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 512,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Classes\/IPUICheckboxField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 653,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/svetoslavkanchev\/Developer\/ios\/irispayui-ios-framework\/IrisPayUI\/Models\/UI\/IPUIInput.swift",
@@ -10829,79 +10877,79 @@
     {
       "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 738,
-      "length": 15,
-      "value": "\"flag-bulgaria\""
-    },
-    {
-      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 886,
-      "length": 14,
-      "value": "\"flag-croatia\""
-    },
-    {
-      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1031,
-      "length": 13,
-      "value": "\"flag-cyprus\""
-    },
-    {
-      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1175,
-      "length": 13,
-      "value": "\"flag-greece\""
-    },
-    {
-      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1321,
-      "length": 14,
-      "value": "\"flag-romania\""
-    },
-    {
-      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1470,
-      "length": 15,
-      "value": "\"flag-slovakia\""
-    },
-    {
-      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1624,
-      "length": 17,
-      "value": "\"green-checkmark\""
-    },
-    {
-      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1768,
-      "length": 11,
-      "value": "\"red-xmark\""
-    },
-    {
-      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1905,
+      "offset": 729,
       "length": 10,
       "value": "\"calendar\""
     },
     {
       "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2041,
+      "offset": 865,
       "length": 10,
       "value": "\"dropdown\""
     },
     {
       "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2171,
+      "offset": 1010,
+      "length": 15,
+      "value": "\"flag-bulgaria\""
+    },
+    {
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1158,
+      "length": 14,
+      "value": "\"flag-croatia\""
+    },
+    {
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1303,
+      "length": 13,
+      "value": "\"flag-cyprus\""
+    },
+    {
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1447,
+      "length": 13,
+      "value": "\"flag-greece\""
+    },
+    {
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1593,
+      "length": 14,
+      "value": "\"flag-romania\""
+    },
+    {
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1742,
+      "length": 15,
+      "value": "\"flag-slovakia\""
+    },
+    {
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1877,
       "length": 7,
       "value": "\"globe\""
+    },
+    {
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2023,
+      "length": 17,
+      "value": "\"green-checkmark\""
+    },
+    {
+      "filePath": "\/Volumes\/T9\/Xcode\/DerivedData\/IrisPayUI-ftzaozvuifnfqlfmknlmukzmmxow\/Build\/Intermediates.noindex\/ArchiveIntermediates\/IrisPayUI\/IntermediateBuildFilesPath\/IrisPayUI.build\/Release-iphonesimulator\/IrisPayUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2167,
+      "length": 11,
+      "value": "\"red-xmark\""
     }
   ]
 }
