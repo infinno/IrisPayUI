@@ -22,15 +22,15 @@
 		</data>
 		<key>ios-arm64/IrisPayUI.framework/Info.plist</key>
 		<data>
-		yhPl9YglEg1DQB+EJSbm6okxhgU=
+		LNj4jFZ6xC8ab38x9Xv/6upfotE=
 		</data>
 		<key>ios-arm64/IrisPayUI.framework/IrisPayUI</key>
 		<data>
-		SFrYdvz1JkjA9erCm5zAoyrGyCw=
+		PXg2mNNZ5M8V59La5LzijILOjxQ=
 		</data>
 		<key>ios-arm64/IrisPayUI.framework/Modules/IrisPayUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		hHWRJzZ8X+t8oDXBdZqSi3ETaDQ=
+		/eMsoMHKn+x+Cdo05eu4gzycIiA=
 		</data>
 		<key>ios-arm64/IrisPayUI.framework/Modules/IrisPayUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -92,15 +92,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/Info.plist</key>
 		<data>
-		e7SMk8gDXqLSGHd++jOaiCg52KE=
+		TvjfmiYaQr4PJg+7oFPYxbsFiHU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/IrisPayUI</key>
 		<data>
-		VuEH8t0pQ61Qqb+uKUDZurZalxQ=
+		PM2lidHlw7Nva9fK8uqtgU9IhJE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		z+/4e/6COS60QKjUt7L3zKwG0Fs=
+		4VIyVxXTJlVG/v/g9P9ffD241Ds=
 		</data>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -124,7 +124,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		z+/4e/6COS60QKjUt7L3zKwG0Fs=
+		4VIyVxXTJlVG/v/g9P9ffD241Ds=
 		</data>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -152,7 +152,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/_CodeSignature/CodeResources</key>
 		<data>
-		DTX72xJoaUg/0O1BvuuCDTU+T/U=
+		Bk+PMi5ZoBUpFkRf4hK3pLM1IHA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/bg.lproj/Localizable.strings</key>
 		<dict>
@@ -207,21 +207,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			neynvc5qKra41puAVY1In/OXrL+LjAnYzy86ez6a46g=
+			Wm0jIOylJOP1v5Z0iSn036bM2PmXuat5SxXs4oSGZVk=
 			</data>
 		</dict>
 		<key>ios-arm64/IrisPayUI.framework/IrisPayUI</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9rg/arhqbgX/g3ySxUFHMBeYeJYy4zhaZaKVgX5KRug=
+			wIqNxJpBNwRFIJJAVC6uH7zbIPs3qKxDHzxhjdogSE4=
 			</data>
 		</dict>
 		<key>ios-arm64/IrisPayUI.framework/Modules/IrisPayUI.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8yd6+UHLWy47JeXm64PpLYeXp7jF2a9Qv+3iezK/p+s=
+			V15DyTWnqOHIcjuxEoEU5KgeD7sahh4/ck0NZZFjTL0=
 			</data>
 		</dict>
 		<key>ios-arm64/IrisPayUI.framework/Modules/IrisPayUI.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -316,21 +316,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gew0jX+zXUBZi6+siNbuXeF8tsy1bIUnm1+hIjtVt04=
+			ZAIdCXczPAXi7tMTE5NEOrGIT/tJCaiMpVmXrZ0mdbk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/IrisPayUI</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VwN1CZTGTsEPuokXyIWoLM8wcC84C7dv+x75Wuk9mD0=
+			l5eor9sHDSz/hi0DD4XK+TXQbxDlhkBNJAEq44VTn7Y=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			urcxFWp63xjhRmsZ3mMnxIEDZuPjw5l2k0/yvlD+Lto=
+			Ejrhumzm6NvvS4N8XhtNhdY/HCzEXPDQF0bo9WiLelI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/Modules/IrisPayUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -372,7 +372,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			urcxFWp63xjhRmsZ3mMnxIEDZuPjw5l2k0/yvlD+Lto=
+			Ejrhumzm6NvvS4N8XhtNhdY/HCzEXPDQF0bo9WiLelI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/Modules/IrisPayUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -421,7 +421,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HdCCZHkxWKHH9OaYec7LAsBi3d/RMqrsESaWn7knCSU=
+			JDUZXWKgIZEaPKklmnCMPUPIwsQ8Hki6TE321ekPXDY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/IrisPayUI.framework/bg.lproj/Localizable.strings</key>
